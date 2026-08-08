@@ -443,3 +443,36 @@ footer p {
         bottom: 16px;
     }
 }
+/* CORRECTION MENU MOBILE */
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block !important;
+        position: relative;
+        z-index: 10001;
+    }
+
+    .nav-links {
+        display: none !important;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #061b3a;
+        flex-direction: column;
+        z-index: 10000;
+    }
+
+    .nav-links.show {
+        display: flex !important;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 18px 25px;
+        color: white;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+}
