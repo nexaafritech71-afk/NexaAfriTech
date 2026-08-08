@@ -4,73 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nexa AfriTech | Électricité • Froid industriel • Climatisation</title>
+    <title>Nexa AfriTech</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= MENU ================= -->
-
 <header class="navbar">
 
-    <div class="logo-menu">
-        <img src="logo.png" alt="Nexa AfriTech">
-    </div>
+    <a href="index.html" class="brand">
+        <img src="logo.png" alt="Logo officiel Nexa AfriTech">
+    </a>
 
-    <nav>
+    <nav class="nav-links" id="navLinks">
         <a href="index.html" class="active">Accueil</a>
         <a href="#services">Services</a>
         <a href="realisations.html">Réalisations</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <div class="menu-icon">
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
         ☰
-    </div>
+    </button>
 
 </header>
 
 
-<!-- ================= COUVERTURE ================= -->
+<!-- COUVERTURE -->
 
 <section class="hero">
 
     <div class="hero-content">
 
-        <h1>
-            Nexa<br>
-            Afri<span>Tech</span>
-        </h1>
-
-        <p class="hero-description">
-            Experts en Électricité Bâtiment<br>
-            • Froid Industriel • Climatisation
+        <p class="hero-small">
+            L'INNOVATION AU SERVICE DE L'EXCELLENCE
         </p>
 
-        <div class="hero-slogan">
-            L’EXCELLENCE EN ÉLECTRICITÉ BÂTIMENT<br>
-            – FROID INDUSTRIEL – CLIMATISATION
-        </div>
+        <h1>
+            Nexa <span>AfriTech</span>
+        </h1>
+
+        <p class="hero-text">
+            Électricité Bâtiment<br>
+            Froid Industriel<br>
+            Climatisation
+        </p>
 
         <a href="tel:+2290162331017" class="call-button">
-            ☎️ &nbsp; Appelez-nous
+            Appelez-nous
         </a>
 
     </div>
 
-
     <div class="hero-logo">
-
         <img src="logo.png" alt="Logo officiel Nexa AfriTech">
-
     </div>
 
 </section>
 
 
-<!-- ================= QUI SOMMES-NOUS ================= -->
+<!-- QUI SOMMES-NOUS -->
 
 <section class="about">
 
@@ -79,16 +73,16 @@
     <div class="yellow-line"></div>
 
     <p>
-        Nexa AfriTech est une entreprise spécialisée dans les installations
-        électriques, le froid industriel et la climatisation. Nous proposons
-        des solutions modernes, fiables et adaptées aux particuliers comme
-        aux entreprises.
+        Nexa AfriTech est une entreprise spécialisée dans
+        l'électricité bâtiment, le froid industriel et la
+        climatisation. Nous proposons des solutions modernes,
+        fiables et adaptées aux besoins de nos clients.
     </p>
 
 </section>
 
 
-<!-- ================= SERVICES ================= -->
+<!-- SERVICES -->
 
 <section class="services" id="services">
 
@@ -98,12 +92,9 @@
 
     <div class="services-grid">
 
-
-        <!-- ÉLECTRICITÉ -->
-
         <div class="service-card">
 
-            <div class="service-icon electricity">
+            <div class="service-icon">
                 ⚡
             </div>
 
@@ -112,19 +103,17 @@
             <div class="small-line"></div>
 
             <p>
-                Installation électrique complète et sécurisée
-                pour bâtiments résidentiels, commerciaux et industriels.
+                Installations électriques modernes,
+                sécurisées et professionnelles.
             </p>
 
         </div>
 
 
-        <!-- FROID -->
-
         <div class="service-card">
 
-            <div class="service-icon cold">
-                ❄
+            <div class="service-icon">
+                ❄️
             </div>
 
             <h3>Froid<br>Industriel</h3>
@@ -132,19 +121,17 @@
             <div class="small-line"></div>
 
             <p>
-                Solutions de froid industriel performantes
-                pour la conservation et les processus critiques.
+                Solutions de froid industriel fiables
+                et performantes.
             </p>
 
         </div>
 
 
-        <!-- CLIMATISATION -->
-
         <div class="service-card">
 
-            <div class="service-icon air">
-                ❄
+            <div class="service-icon">
+                ❄️
             </div>
 
             <h3>Climatisation</h3>
@@ -152,8 +139,8 @@
             <div class="small-line"></div>
 
             <p>
-                Installation et maintenance de systèmes de climatisation
-                pour un confort optimal toute l’année.
+                Installation et maintenance de systèmes
+                de climatisation performants.
             </p>
 
         </div>
@@ -163,7 +150,7 @@
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
 
@@ -172,29 +159,33 @@
     <div class="yellow-line"></div>
 
     <p>
-        Besoin d'une installation électrique, d'une solution de froid
-        industriel ou de climatisation ?
+        Parlons de votre prochain projet.
     </p>
 
     <a href="tel:+2290162331017" class="call-button">
-        ☎️ Appelez-nous
+        Appelez-nous
     </a>
+
+    <p class="phone">
+        +229 01 62 33 10 17<br>
+        +229 01 95 41 12 31
+    </p>
 
 </section>
 
 
-<!-- ================= WHATSAPP ================= -->
+<!-- WHATSAPP -->
 
 <a
     href="https://wa.me/2290162331017"
     class="whatsapp"
     target="_blank"
-    aria-label="Contacter Nexa AfriTech sur WhatsApp">
-    💬
+    aria-label="WhatsApp Nexa AfriTech">
+    ☎
 </a>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- PIED DE PAGE -->
 
 <footer>
 
@@ -205,6 +196,9 @@
     </p>
 
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
