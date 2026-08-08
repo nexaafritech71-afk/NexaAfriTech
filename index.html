@@ -162,14 +162,53 @@
         Parlons de votre prochain projet.
     </p>
 
-    <a href="tel:+2290162331017" class="call-button">
-        Appelez-nous
-    </a>
+    <form class="contact-form" action="mailto:" method="post" enctype="text/plain">
 
-    <p class="phone">
-        +229 01 62 33 10 17<br>
-        +229 01 95 41 12 31
-    </p>
+        <input
+            type="text"
+            name="nom"
+            placeholder="Votre nom"
+            required>
+
+        <input
+            type="tel"
+            name="telephone"
+            placeholder="Votre numéro de téléphone"
+            required>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Votre adresse e-mail"
+            required>
+
+        <textarea
+            name="message"
+            rows="6"
+            placeholder="Décrivez votre projet..."
+            required></textarea>
+
+        <button type="submit">
+            Envoyer le message
+        </button>
+
+    </form>
+
+    <div class="contact-info">
+
+        <p>
+            📞 +229 01 62 33 10 17
+        </p>
+
+        <p>
+            📞 +229 01 95 41 12 31
+        </p>
+
+        <a href="https://wa.me/2290162331017" target="_blank">
+            💬 Nous contacter sur WhatsApp
+        </a>
+
+    </div>
 
 </section>
 
