@@ -136,9 +136,15 @@ cursor:pointer;
 
 .gallery img:hover{
 transform:scale(1.05);
+
+    .galerie img:hover {
+    transform: scale(1.05);
+}
+
+/* LOGO */
 .logo {
-    width: 180px;
-    height: auto;
+    width: 180px !important;
+    height: auto !important;
     display: block;
     margin: 0 auto 20px;
 }
