@@ -446,4 +446,20 @@ footer p {
         right: 18px;
         bottom: 18px;
     }
+}.whatsapp {
+    position: fixed !important;
+    right: 20px !important;
+    bottom: 20px !important;
+    width: 65px !important;
+    height: 65px !important;
+    border-radius: 50% !important;
+    background: #20d366 !important;
+    color: white !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 32px !important;
+    text-decoration: none !important;
+    z-index: 9999 !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
