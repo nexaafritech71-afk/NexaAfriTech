@@ -136,7 +136,7 @@ cursor:pointer;
 
 .gallery img:hover{
 transform:scale(1.05);
-}.logo {
+.logo {
     width: 120px;
     height: auto;
     display: block;
