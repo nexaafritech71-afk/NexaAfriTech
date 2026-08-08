@@ -1,8 +1,3 @@
-/* =========================
-   NEXA AFRITECH
-   STYLE PRINCIPAL
-========================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,74 +15,73 @@ body {
 }
 
 
-/* =========================
-   MENU
-========================= */
+/* ================= MENU ================= */
 
 .navbar {
-    height: 82px;
+    height: 75px;
     background: #061b3a;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 6%;
     position: relative;
-    z-index: 10;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
+    z-index: 1000;
 }
 
-.menu-icon {
+.brand img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
     display: block;
-    font-size: 32px;
-    color: white;
-    cursor: pointer;
 }
 
-nav {
-    width: 100%;
+.nav-links {
     display: flex;
-    justify-content: center;
-    gap: 90px;
+    align-items: center;
+    gap: 45px;
 }
 
-nav a {
+.nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 17px;
     font-weight: bold;
-    padding: 28px 5px 22px;
+    padding: 27px 5px 23px;
     transition: 0.3s;
 }
 
-nav a:hover,
-nav a.active {
-    border-bottom: 5px solid #ffc400;
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffc400;
+    border-bottom: 4px solid #ffc400;
 }
 
-.menu-icon {
+.menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
     color: white;
-    font-size: 40px;
-    display: block;
+    font-size: 34px;
+    cursor: pointer;
 }
 
 
-/* =========================
-   COUVERTURE
-========================= */
+/* ================= COUVERTURE ================= */
 
 .hero {
-    min-height: 700px;
-    background:
-        linear-gradient(
-            90deg,
-            rgba(3, 25, 56, 0.98),
-            rgba(4, 34, 70, 0.88),
-            rgba(3, 25, 56, 0.95)
-        );
+    min-height: 590px;
+    background: linear-gradient(
+        115deg,
+        #041936 0%,
+        #07305d 55%,
+        #061b3a 100%
+    );
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 70px 7%;
+
+    padding: 55px 8%;
     position: relative;
     overflow: hidden;
 }
@@ -95,61 +89,57 @@ nav a.active {
 .hero::after {
     content: "";
     position: absolute;
-    width: 280px;
+    width: 180px;
     height: 700px;
     background: #ffc400;
-    right: -120px;
-    top: -80px;
-    transform: rotate(38deg);
+    right: -100px;
+    top: -70px;
+    transform: rotate(32deg);
     opacity: 0.95;
 }
 
 .hero-content {
-    width: 52%;
+    width: 55%;
     position: relative;
     z-index: 2;
 }
 
+.hero-small {
+    color: #ffc400;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
 .hero h1 {
     color: white;
-    font-size: clamp(60px, 7vw, 105px);
+    font-size: clamp(55px, 7vw, 92px);
     line-height: 0.95;
-    font-weight: 800;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
 }
 
 .hero h1 span {
     color: #ffc400;
 }
 
-.hero-description {
+.hero-text {
     color: white;
-    font-size: 25px;
-    line-height: 1.45;
+    font-size: 24px;
+    line-height: 1.5;
     font-weight: bold;
-    margin-bottom: 35px;
-}
-
-.hero-slogan {
-    color: white;
-    border-left: 5px solid #ffc400;
-    padding-left: 18px;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.6;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .call-button {
     display: inline-block;
     background: #ffc400;
     color: #071b38;
-    padding: 18px 35px;
-    border-radius: 40px;
+    padding: 15px 30px;
+    border-radius: 35px;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: bold;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
     transition: 0.3s;
 }
 
@@ -158,121 +148,104 @@ nav a.active {
     background: #ffd633;
 }
 
-
-/* =========================
-   LOGO OFFICIEL
-========================= */
-
 .hero-logo {
-    width: 42%;
+    width: 40%;
+    text-align: center;
     position: relative;
     z-index: 2;
-    text-align: center;
 }
 
 .hero-logo img {
     width: 200px;
     height: 200px;
     object-fit: contain;
-    border-radius: 50%;
     background: white;
+    border-radius: 50%;
     padding: 8px;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
 }
 
 
-/* =========================
-   SECTIONS
-========================= */
+/* ================= SECTIONS ================= */
 
 .about,
 .services,
 .contact {
-    padding: 70px 7%;
+    padding: 65px 7%;
     text-align: center;
 }
 
 .about {
-    background: #f7f8fb;
+    background: #ffffff;
 }
 
 .about h2,
 .services h2,
 .contact h2 {
-    font-size: 38px;
-    margin-bottom: 10px;
     color: #071b38;
+    font-size: 35px;
+    margin-bottom: 12px;
 }
 
 .yellow-line {
-    width: 75px;
+    width: 65px;
     height: 5px;
     background: #ffc400;
-    margin: 0 auto 35px;
+    margin: 0 auto 30px;
 }
 
 .about p {
     max-width: 850px;
     margin: auto;
-    font-size: 20px;
+    color: #444;
+    font-size: 18px;
     line-height: 1.7;
-    color: #333;
 }
 
 
-/* =========================
-   SERVICES
-========================= */
+/* ================= SERVICES ================= */
 
 .services {
     background: #f5f7fa;
 }
 
 .services-grid {
+    max-width: 1100px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
 .service-card {
     background: white;
+    border-radius: 15px;
     padding: 30px;
-    border-radius: 14px;
     text-align: left;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.09);
     transition: 0.3s;
 }
 
 .service-card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-6px);
 }
 
 .service-icon {
     width: 65px;
     height: 65px;
-    border-radius: 50%;
     background: #071b38;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-
-.electricity {
     color: #ffc400;
-}
-
-.cold,
-.air {
-    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
 .service-card h3 {
     color: #071b38;
-    font-size: 23px;
+    font-size: 22px;
     line-height: 1.2;
 }
 
@@ -280,160 +253,183 @@ nav a.active {
     width: 45px;
     height: 4px;
     background: #ffc400;
-    margin: 15px 0;
+    margin: 14px 0;
 }
 
 .service-card p {
-    color: #333;
-    font-size: 17px;
+    color: #444;
+    font-size: 16px;
     line-height: 1.6;
 }
 
 
-/* =========================
-   CONTACT
-========================= */
+/* ================= CONTACT ================= */
 
 .contact {
     background: white;
 }
 
 .contact p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    color: #333;
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contact .phone {
+    margin-top: 25px;
+    line-height: 1.8;
+    font-weight: bold;
+    color: #071b38;
 }
 
 
-/* =========================
-   WHATSAPP
-========================= */
+/* ================= WHATSAPP ================= */
 
 .whatsapp {
     position: fixed;
-    right: 25px;
-    bottom: 25px;
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
+    right: 20px;
+    bottom: 20px;
+
+    width: 62px;
+    height: 62px;
+
     background: #20d366;
     color: white;
+
+    border-radius: 50%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
+
     text-decoration: none;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
-    z-index: 100;
+    font-size: 29px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* ================= FOOTER ================= */
 
 footer {
     background: #061b3a;
     color: white;
     text-align: center;
-    padding: 35px 20px;
+    padding: 30px 20px;
 }
 
 footer img {
-    width: 90px;
+    width: 75px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 footer p {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
-/* =========================
-   VERSION TÉLÉPHONE
-========================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
 
     .navbar {
         height: 70px;
-        padding: 0 20px;
+        padding: 0 18px;
     }
 
-    .logo-menu {
+    .brand img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .menu-toggle {
         display: block;
     }
 
-    nav {
-        gap: 0;
-        justify-content: flex-end;
-    }
-
-    nav a {
-        font-size: 15px;
-        padding: 24px 8px 18px;
-    }
-
-    .menu-icon {
+    .nav-links {
         display: none;
+
+        position: absolute;
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: #061b3a;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 16px 25px;
+        font-size: 17px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
     .hero {
         min-height: 680px;
+        padding: 50px 25px;
         flex-direction: column;
-        text-align: left;
-        padding: 55px 25px;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero::after {
+        display: none;
     }
 
     .hero-content {
         width: 100%;
     }
 
+    .hero-small {
+        font-size: 12px;
+    }
+
     .hero h1 {
-        font-size: 65px;
-        margin-bottom: 25px;
+        font-size: 58px;
     }
 
-    .hero-description {
+    .hero-text {
         font-size: 19px;
-    }
-
-    .hero-slogan {
-        font-size: 15px;
     }
 
     .hero-logo {
         width: 100%;
-        text-align: center;
         margin-top: 35px;
     }
 
     .hero-logo img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     .about,
     .services,
     .contact {
-        padding: 55px 20px;
+        padding: 50px 20px;
     }
 
     .about h2,
     .services h2,
     .contact h2 {
-        font-size: 32px;
-    }
-
-    .about p {
-        font-size: 17px;
+        font-size: 30px;
     }
 
     .services-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
     }
 
     .service-card {
@@ -441,25 +437,9 @@ footer p {
     }
 
     .whatsapp {
-        width: 60px;
-        height: 60px;
-        right: 18px;
-        bottom: 18px;
+        width: 58px;
+        height: 58px;
+        right: 16px;
+        bottom: 16px;
     }
-}.whatsapp {
-    position: fixed !important;
-    right: 20px !important;
-    bottom: 20px !important;
-    width: 65px !important;
-    height: 65px !important;
-    border-radius: 50% !important;
-    background: #20d366 !important;
-    color: white !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 32px !important;
-    text-decoration: none !important;
-    z-index: 9999 !important;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
