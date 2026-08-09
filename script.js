@@ -15,3 +15,8 @@ if (menuToggle && navLinks) {
         });
     });
 }
+function ouvrirProjet(projet) {
+    if (projet === "electricite") {
+        window.open("electricite.png", "_blank");
+    }
+}
