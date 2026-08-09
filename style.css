@@ -850,3 +850,15 @@ footer p {
     display: block;
     margin-bottom: 20px;
 }
+.WhatsApp {
+    animation: flottement 2s ease-in-out infinite;
+}
+
+@keyframes flottement {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
