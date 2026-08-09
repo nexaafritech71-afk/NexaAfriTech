@@ -16,15 +16,25 @@ if (menuToggle && navLinks) {
     });
 }
 function ouvrirProjet(projet) {
+    const popup = document.getElementById("popup-projet");
+    const image = document.getElementById("image-projet");
+
     if (projet === "electricite") {
-        window.open("electricite.png", "_blank");
+        image.src = "electricite.png";
     }
 
     if (projet === "froid") {
-        window.open("froid.png", "_blank");
+        image.src = "froid.png";
     }
 
     if (projet === "climatisation") {
-        window.open("climatisation.png", "_blank");
+        image.src = "climatisation.png";
     }
+
+    popup.style.display = "flex";
+}
+
+function fermerProjet() {
+    const popup = document.getElementById("popup-projet");
+    popup.style.display = "none";
 }
