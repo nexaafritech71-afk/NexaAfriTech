@@ -38,9 +38,5 @@ function fermerProjet() {
     const popup = document.getElementById("popup-projet");
     popup.style.display = "none";
 }
-document.getElementById("popup-projet").addEventListener("click", function(event) {
-    if (event.target === this) {
-        fermerProjet();
-    }
-});
+
 
