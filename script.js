@@ -19,4 +19,12 @@ function ouvrirProjet(projet) {
     if (projet === "electricite") {
         window.open("electricite.png", "_blank");
     }
+
+    if (projet === "froid") {
+        window.open("froid.png", "_blank");
+    }
+
+    if (projet === "climatisation") {
+        window.open("climatisation.png", "_blank");
+    }
 }
