@@ -247,7 +247,9 @@ text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
     font-size: 32px;
     margin-bottom: 20px;
 }
-
+.service-card:hover .service-icon {
+    transform: rotate(8deg) scale(1.05);
+}
 .service-card h3 {
     color: #071b38;
     font-size: 22px;
