@@ -43,8 +43,4 @@ document.getElementById("popup-projet").addEventListener("click", function(event
         fermerProjet();
     }
 });
-document.getElementById("popup-projet").addEventListener("click", function(event) {
-    if (event.target === this) {
-        fermerProjet();
-    }
-});
+
