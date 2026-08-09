@@ -234,9 +234,6 @@ text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
     transform: translateY(-6px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
-.service-card:hover {
-    transform: translateY(-6px);
-}
 
 .service-icon {
     width: 65px;
