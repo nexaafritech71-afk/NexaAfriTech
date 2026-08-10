@@ -1,0 +1,16 @@
+Nexa AfriTech — SEO technique + performances
+Version optimisée — 10 août 2026
+
+Optimisations appliquées :
+- Conversion des images de contenu en WebP pour réduire fortement le poids.
+- Dimensions width/height ajoutées aux images pour limiter les décalages visuels (CLS).
+- loading="lazy" + decoding="async" sur les images hors écran.
+- Image principale du hero chargée en priorité.
+- JavaScript chargé avec defer.
+- Menu mobile fonctionnel sur les 3 pages de services.
+- Hiérarchie H1/H2/H3 corrigée dans les pages de services.
+- Accessibilité renforcée pour le bouton de fermeture de la galerie.
+- Correction d’un lien HTML dupliqué dans la galerie.
+- Ressources inutilisées projet1.png, projet2.png et projet3.png retirées de la version finale.
+- robots.txt et sitemap.xml conservés et vérifiés.
+- Les balises canonical, robots, Open Graph et données structurées existantes sont conservées.
