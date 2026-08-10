@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nexaafritech71-afk.github.io/NexaAfriTech/sitemap.xml
