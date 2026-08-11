@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nos Réalisations | Nexa AfriTech</title>
+    <title>Réalisations | Nexa AfriTech</title>
 
     <meta name="description"
           content="Découvrez les réalisations de Nexa AfriTech en électricité bâtiment, froid industriel et climatisation au Bénin et en Côte d’Ivoire.">
@@ -15,243 +15,259 @@
     <meta name="author" content="Nexa AfriTech">
 
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .realisations-page {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-
-        .realisations-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .realisations-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-
-        .realisations-header p {
-            max-width: 800px;
-            margin: auto;
-            line-height: 1.7;
-        }
-
-        .projets-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .projet-card {
-            overflow: hidden;
-            border-radius: 15px;
-            background: #fff;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-        }
-
-        .projet-card img {
-            display: block;
-            width: 100%;
-            height: 260px;
-            object-fit: cover;
-        }
-
-        .projet-content {
-            padding: 25px;
-        }
-
-        .projet-content h2 {
-            margin-top: 0;
-            margin-bottom: 12px;
-        }
-
-        .projet-content p {
-            line-height: 1.7;
-            margin-bottom: 10px;
-        }
-
-        .retour-accueil {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .retour-accueil a {
-            display: inline-block;
-            padding: 12px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-
-        @media (max-width: 600px) {
-            .realisations-page {
-                padding: 40px 15px;
-            }
-
-            .realisations-header h1 {
-                font-size: 2rem;
-            }
-
-            .projet-card img {
-                height: 220px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- EN-TÊTE -->
-    <header>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="realisations.html">Réalisations</a>
+    <!-- =========================
+         EN-TÊTE / MENU
+    ========================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Nexa AfriTech
+            </a>
+
+            <button
+                id="menuToggle"
+                class="menu-toggle"
+                type="button"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
+                ☰
+            </button>
+
+            <div id="navLinks" class="nav-links">
+
+                <a href="index.html">Accueil</a>
+
+                <a href="realisations.html" aria-current="page">
+                    Réalisations
+                </a>
+
+            </div>
+
         </nav>
+
     </header>
 
 
-    <!-- PAGE RÉALISATIONS -->
-    <main class="realisations-page">
+    <!-- =========================
+         CONTENU PRINCIPAL
+    ========================== -->
 
-        <section class="realisations-header">
+    <main>
 
-            <h1>Nos Réalisations</h1>
+        <section class="realisations-page">
 
-            <p>
-                Découvrez quelques-unes des réalisations de
-                <strong>Nexa AfriTech</strong> dans les domaines de
-                l'électricité bâtiment, du froid industriel et de la
-                climatisation.
-            </p>
+            <div class="realisations-header">
+
+                <h1>Nos Réalisations</h1>
+
+                <p>
+                    Découvrez quelques-unes des réalisations de
+                    <strong>Nexa AfriTech</strong> dans les domaines de
+                    l'électricité bâtiment, du froid industriel et de la
+                    climatisation.
+                </p>
+
+            </div>
+
+
+            <!-- =========================
+                 CARTES DES PROJETS
+            ========================== -->
+
+            <div class="projets-grid">
+
+
+                <!-- =====================
+                     PROJET ÉLECTRICITÉ
+                ====================== -->
+
+                <article class="projet-card">
+
+                    <div class="projet-image">
+
+                        <img
+                            src="electricite.webp"
+                            width="1537"
+                            height="1023"
+                            loading="lazy"
+                            decoding="async"
+                            alt="Réalisation Nexa AfriTech en électricité bâtiment à Cotonou, Bénin"
+                            onclick="ouvrirProjet('electricite')">
+
+                    </div>
+
+                    <div class="projet-content">
+
+                        <h2>Électricité bâtiment</h2>
+
+                        <p>
+                            Installation et réalisation de travaux
+                            d'électricité bâtiment par Nexa AfriTech
+                            à Cotonou, Bénin.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="voir-projet"
+                            onclick="ouvrirProjet('electricite')">
+                            Voir le projet
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =====================
+                     PROJET FROID
+                ====================== -->
+
+                <article class="projet-card">
+
+                    <div class="projet-image">
+
+                        <img
+                            src="froid.webp"
+                            width="1537"
+                            height="1023"
+                            loading="lazy"
+                            decoding="async"
+                            alt="Réalisation Nexa AfriTech en froid industriel à Abidjan, Côte d’Ivoire"
+                            onclick="ouvrirProjet('froid')">
+
+                    </div>
+
+                    <div class="projet-content">
+
+                        <h2>Froid industriel</h2>
+
+                        <p>
+                            Réalisation de solutions de froid industriel
+                            par Nexa AfriTech à Abidjan,
+                            Côte d’Ivoire.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="voir-projet"
+                            onclick="ouvrirProjet('froid')">
+                            Voir le projet
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =====================
+                     PROJET CLIMATISATION
+                ====================== -->
+
+                <article class="projet-card">
+
+                    <div class="projet-image">
+
+                        <img
+                            src="climatisation.webp"
+                            width="1404"
+                            height="1120"
+                            loading="lazy"
+                            decoding="async"
+                            alt="Réalisation Nexa AfriTech en climatisation à Cotonou, Bénin"
+                            onclick="ouvrirProjet('climatisation')">
+
+                    </div>
+
+                    <div class="projet-content">
+
+                        <h2>Climatisation</h2>
+
+                        <p>
+                            Installation de systèmes de climatisation
+                            réalisée par Nexa AfriTech à Cotonou,
+                            Bénin.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="voir-projet"
+                            onclick="ouvrirProjet('climatisation')">
+                            Voir le projet
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
 
         </section>
-
-
-        <!-- PROJETS -->
-        <section class="projets-grid">
-
-
-            <!-- ÉLECTRICITÉ BÂTIMENT -->
-            <article class="projet-card">
-
-                <img
-                    src="electricite.webp"
-                    width="1537"
-                    height="1023"
-                    loading="lazy"
-                    decoding="async"
-                    alt="Réalisation Nexa AfriTech en électricité bâtiment à Cotonou, Bénin">
-
-                <div class="projet-content">
-
-                    <h2>Électricité bâtiment</h2>
-
-                    <p>
-                        Installation et réalisation de travaux
-                        d'électricité bâtiment par Nexa AfriTech
-                        à Cotonou, Bénin.
-                    </p>
-
-                    <p>
-                        Notre expertise couvre les installations
-                        électriques, la distribution et les solutions
-                        adaptées aux bâtiments modernes.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- FROID INDUSTRIEL -->
-            <article class="projet-card">
-
-                <img
-                    src="froid.webp"
-                    width="1537"
-                    height="1023"
-                    loading="lazy"
-                    decoding="async"
-                    alt="Réalisation Nexa AfriTech en froid industriel à Abidjan, Côte d’Ivoire">
-
-                <div class="projet-content">
-
-                    <h2>Froid industriel</h2>
-
-                    <p>
-                        Réalisation de solutions de froid industriel
-                        par Nexa AfriTech à Abidjan,
-                        Côte d’Ivoire.
-                    </p>
-
-                    <p>
-                        Nous proposons des installations adaptées
-                        aux besoins professionnels et industriels.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- CLIMATISATION -->
-            <article class="projet-card">
-
-                <img
-                    src="climatisation.webp"
-                    width="1404"
-                    height="1120"
-                    loading="lazy"
-                    decoding="async"
-                    alt="Réalisation Nexa AfriTech en climatisation à Cotonou, Bénin">
-
-                <div class="projet-content">
-
-                    <h2>Climatisation</h2>
-
-                    <p>
-                        Installation de systèmes de climatisation
-                        réalisée par Nexa AfriTech à Cotonou,
-                        Bénin.
-                    </p>
-
-                    <p>
-                        Des solutions de climatisation fiables,
-                        performantes et adaptées aux différents
-                        environnements professionnels.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-        </section>
-
-
-        <!-- RETOUR -->
-        <div class="retour-accueil">
-
-            <a href="index.html">
-                ← Retour à l'accueil
-            </a>
-
-        </div>
 
     </main>
 
 
-    <!-- PIED DE PAGE -->
+    <!-- =========================
+         FENÊTRE PROJET / POPUP
+    ========================== -->
+
+    <div
+        id="popup-projet"
+        class="popup-projet"
+        hidden
+        role="dialog"
+        aria-modal="true"
+        aria-label="Aperçu du projet">
+
+        <div class="popup-contenu">
+
+            <button
+                type="button"
+                class="popup-retour"
+                onclick="fermerProjet()"
+                aria-label="Fermer">
+                × Retour
+            </button>
+
+            <img
+                id="image-projet"
+                src=""
+                alt="Aperçu de la réalisation Nexa AfriTech">
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         PIED DE PAGE
+    ========================== -->
+
     <footer>
 
         <p>
-            © 2026 Nexa AfriTech — L’excellence en électricité Bâtiment -
+            © 2026 Nexa AfriTech —
+            L’excellence en électricité Bâtiment -
             Froid industrie - climatisation.
         </p>
 
     </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+         Ton script.js existant
+    ========================== -->
+
+    <script src="script.js"></script>
 
 </body>
 </html>
