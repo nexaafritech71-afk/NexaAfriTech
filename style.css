@@ -1207,4 +1207,122 @@ textarea:focus-visible {
         padding: 9px 15px;
         font-size: 14px;
     }
+}/* =========================================
+   CONTACT — PAGE RÉALISATIONS
+   ========================================= */
+
+.realisations-contact {
+    background: #061b3a;
+    color: white;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.realisations-contact-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.contact-label {
+    color: #ffc400;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.realisations-contact h2 {
+    color: white;
+    font-size: clamp(28px, 4vw, 38px);
+    margin: 0 0 15px;
+}
+
+.contact-description {
+    max-width: 720px;
+    margin: 0 auto 35px;
+    color: #dce3ed;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.contact-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.contact-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+    padding: 14px 20px;
+
+    background: white;
+    color: #071b38;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.contact-action:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+    background: #ffc400;
+}
+
+.whatsapp-action {
+    background: #20d366;
+    color: white;
+}
+
+.whatsapp-action:hover {
+    background: #25e676;
+}
+
+.email-action {
+    background: #f5f7fa;
+    color: #071b38;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .realisations-contact {
+        padding: 50px 18px;
+    }
+
+    .realisations-contact h2 {
+        font-size: 28px;
+    }
+
+    .contact-description {
+        font-size: 16px;
+    }
+
+    .contact-actions {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .contact-action {
+        width: 100%;
+        min-height: 50px;
+        font-size: 14px;
+    }
 }
