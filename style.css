@@ -1325,4 +1325,73 @@ textarea:focus-visible {
         min-height: 50px;
         font-size: 14px;
     }
+}/* =========================
+   AVIS GOOGLE
+========================= */
+
+.google-reviews {
+    padding: 70px 20px;
+    text-align: center;
+    background: #f7f9fc;
+}
+
+.google-reviews h2 {
+    margin: 10px auto 0;
+    font-size: 2rem;
+    color: #061b3a;
+}
+
+.google-reviews-text {
+    max-width: 700px;
+    margin: 20px auto 30px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.google-review-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 26px;
+    border-radius: 8px;
+    background: #061b3a;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.google-review-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(6, 27, 58, 0.25);
+}
+
+.google-review-button:focus-visible {
+    outline: 3px solid #f4c400;
+    outline-offset: 3px;
+}
+
+/* Adaptation mobile */
+
+@media (max-width: 600px) {
+
+    .google-reviews {
+        padding: 55px 18px;
+    }
+
+    .google-reviews h2 {
+        font-size: 1.6rem;
+    }
+
+    .google-reviews-text {
+        font-size: 0.95rem;
+    }
+
+    .google-review-button {
+        width: 100%;
+        max-width: 320px;
+    }
+
 }
