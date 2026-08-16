@@ -1,6 +1,6 @@
 /* =========================================================
    NEXA AFRITECH — STYLE.CSS
-   Version propre et consolidée
+   VERSION PROPRE / CONSOLIDÉE
    ========================================================= */
 
 
@@ -27,6 +27,7 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -278,7 +279,7 @@ textarea:focus-visible {
 }
 
 .about {
-    background: white;
+    background: #ffffff;
 }
 
 .services {
@@ -286,7 +287,7 @@ textarea:focus-visible {
 }
 
 .contact {
-    background: white;
+    background: #ffffff;
 }
 
 .about h2,
@@ -316,6 +317,7 @@ textarea:focus-visible {
     color: #444;
 
     font-size: 18px;
+
     line-height: 1.7;
 }
 
@@ -436,9 +438,37 @@ textarea:focus-visible {
     color: #071b38;
 }
 
+.contact-info {
+    margin-top: 25px;
+
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #071b38;
+}
+
+.contact-info a {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #168c45;
+
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 
 /* =========================================================
-   7. FORMULAIRE
+   7. FORMULAIRE DE CONTACT
    ========================================================= */
 
 .contact-form {
@@ -522,34 +552,6 @@ textarea:focus-visible {
     background: #ffd633;
 }
 
-.contact-info {
-    margin-top: 25px;
-
-    text-align: center;
-}
-
-.contact-info p {
-    margin-bottom: 8px;
-
-    font-weight: bold;
-
-    color: #071b38;
-}
-
-.contact-info a {
-    display: inline-block;
-
-    margin-top: 10px;
-
-    color: #168c45;
-
-    font-weight: bold;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
 
 /* =========================================================
    8. WHATSAPP
@@ -616,7 +618,7 @@ footer p {
 
 
 /* =========================================================
-   10. PAGE RÉALISATIONS — EN-TÊTE
+   10. PAGE RÉALISATIONS — HEADER
    ========================================================= */
 
 .realisation-header {
@@ -747,9 +749,6 @@ footer p {
         0 15px 35px rgba(0, 0, 0, 0.18);
 }
 
-
-/* IMAGE UNIFORME 16:9 */
-
 .gallery-item img {
     display: block;
 
@@ -773,9 +772,6 @@ footer p {
     transform: scale(1.04);
 }
 
-
-/* CONTENU DES CARTES */
-
 .gallery-caption {
     padding: 20px;
 
@@ -785,7 +781,8 @@ footer p {
     flex: 1;
 }
 
-.gallery-caption h2 {
+.gallery-caption h2,
+.gallery-caption h3 {
     color: #071b38;
 
     font-size: 21px;
@@ -807,7 +804,145 @@ footer p {
 
 
 /* =========================================================
-   13. BOUTON VOIR LE PROJET
+   13. CARTES PROJETS — COMPATIBILITÉ
+   ========================================================= */
+
+.realisations-page {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 60px 20px;
+}
+
+.realisations-header {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.realisations-header h1 {
+    color: #071b38;
+
+    font-size: clamp(32px, 5vw, 48px);
+
+    margin-bottom: 15px;
+}
+
+.realisations-header p {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+.projets-grid {
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+}
+
+.projet-card {
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+.projet-image {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    background: #e9edf2;
+}
+
+.projet-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.4s ease;
+}
+
+.projet-card:hover .projet-image img {
+    transform: scale(1.04);
+}
+
+.projet-content {
+    padding: 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.projet-content h2 {
+    color: #071b38;
+
+    text-align: left;
+
+    font-size: 22px;
+
+    margin: 0 0 12px;
+}
+
+.projet-content p {
+    color: #555;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+
+    margin: 0 0 12px;
+}
+
+
+/* =========================================================
+   14. BOUTON VOIR LE PROJET
    ========================================================= */
 
 .voir-projet {
@@ -857,7 +992,26 @@ footer p {
 
 
 /* =========================================================
-   14. POPUP DES RÉALISATIONS
+   15. IMAGE RÉALISATION
+   ========================================================= */
+
+.image-realisation {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    display: block;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   16. POPUP DES RÉALISATIONS
    ========================================================= */
 
 .popup-projet {
@@ -895,6 +1049,8 @@ footer p {
 
     align-items: center;
     justify-content: center;
+
+    text-align: center;
 }
 
 .popup-contenu img {
@@ -915,8 +1071,28 @@ footer p {
         0 15px 45px rgba(0, 0, 0, 0.4);
 }
 
+.popup-fermer {
+    position: absolute;
 
-/* BOUTON RETOUR DU POPUP */
+    top: -55px;
+    right: 0;
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 40px;
+
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+.popup-fermer:hover {
+    opacity: 0.7;
+}
 
 .popup-retour {
     position: absolute;
@@ -953,7 +1129,7 @@ footer p {
 
 
 /* =========================================================
-   15. SECTION CONTACT — RÉALISATIONS
+   17. CONTACT — PAGE RÉALISATIONS
    ========================================================= */
 
 .realisations-contact {
@@ -1061,7 +1237,7 @@ footer p {
 
 
 /* =========================================================
-   16. POURQUOI NOUS CHOISIR
+   18. POURQUOI NOUS CHOISIR
    ========================================================= */
 
 .why-us {
@@ -1158,6 +1334,8 @@ footer p {
 }
 
 .why-card h3 {
+    color: #071b38;
+
     font-size: 19px;
 
     margin-bottom: 12px;
@@ -1173,7 +1351,7 @@ footer p {
 
 
 /* =========================================================
-   17. ACCESSIBILITÉ
+   19. ACCESSIBILITÉ / SEO TECHNIQUE
    ========================================================= */
 
 .sr-only {
@@ -1196,7 +1374,7 @@ footer p {
 
 
 /* =========================================================
-   18. TABLETTE
+   20. TABLETTE
    ========================================================= */
 
 @media (max-width: 900px) {
@@ -1211,6 +1389,11 @@ footer p {
             repeat(2, minmax(0, 1fr));
     }
 
+    .projets-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
     .why-grid {
         grid-template-columns:
             repeat(2, minmax(0, 1fr));
@@ -1219,192 +1402,5 @@ footer p {
 
 
 /* =========================================================
-   19. MOBILE — 768px
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-    /* MENU */
-
-    .navbar {
-        height: 70px;
-
-        padding: 0 18px;
-    }
-
-    .brand img {
-        width: 52px;
-        height: 52px;
-    }
-
-    .menu-toggle {
-        display: block !important;
-    }
-
-    .nav-links {
-        display: none !important;
-
-        position: absolute;
-
-        top: 70px;
-        left: 0;
-
-        width: 100%;
-
-        background: #061b3a;
-
-        flex-direction: column;
-
-        align-items: stretch;
-
-        gap: 0;
-
-        padding: 10px 0;
-
-        z-index: 10000;
-    }
-
-    .nav-links.show {
-        display: flex !important;
-    }
-
-    .nav-links a {
-        display: block;
-
-        width: 100%;
-
-        padding: 18px 25px;
-
-        color: white;
-
-        font-size: 17px;
-
-        border-bottom:
-            1px solid rgba(255, 255, 255, 0.15);
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-        color: #ffc400;
-
-        border-bottom:
-            1px solid rgba(255, 255, 255, 0.15);
-    }
-
-
-    /* HERO */
-
-    .hero {
-        min-height: 680px;
-
-        padding: 50px 25px;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        text-align: center;
-    }
-
-    .hero::after {
-        display: none;
-    }
-
-    .hero-content {
-        width: 100%;
-    }
-
-    .hero-small {
-        font-size: 12px;
-    }
-
-    .hero h1 {
-        font-size: 58px;
-    }
-
-    .hero-text {
-        font-size: 19px;
-    }
-
-    .hero-logo {
-        width: 100%;
-
-        margin-top: 35px;
-    }
-
-    .hero-logo img {
-        width: 150px;
-        height: 150px;
-    }
-
-
-    /* SECTIONS */
-
-    .about,
-    .services,
-    .contact {
-        padding: 50px 20px;
-    }
-
-    .about h2,
-    .services h2,
-    .contact h2 {
-        font-size: 30px;
-    }
-
-
-    /* SERVICES */
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-card {
-        padding: 25px;
-    }
-
-
-    /* RÉALISATIONS */
-
-    .realisation-header {
-        padding: 45px 20px 35px;
-    }
-
-    .realisation-header h1 {
-        font-size: 34px;
-    }
-
-    .realisation-header .intro {
-        font-size: 16px;
-    }
-
-    .local-seo {
-        padding: 40px 20px;
-    }
-
-    .local-seo h2 {
-        font-size: 27px;
-    }
-
-    .local-seo p {
-        font-size: 16px;
-    }
-
-    .gallery-section {
-        padding: 45px 20px;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-
-        gap: 22px;
-    }
-
-    .gallery-item img {
-        aspect-ratio: 16 / 9;
-
-        height: auto;
-    }
-
-    .gallery-caption {
-        
+   21. MOBILE — 768px
+   =======================
