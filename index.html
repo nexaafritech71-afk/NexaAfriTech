@@ -679,89 +679,125 @@
 </p>  
 
 
-<form  
-    class="contact-form"  
-    action="https://formspree.io/f/xrpzeogd"  
-    method="POST"  
-    aria-label="Formulaire de contact Nexa AfriTech">  
+<form
+    class="contact-form"
+    action="https://formspree.io/f/xrpzeogd"
+    method="POST"
+    aria-label="Formulaire de demande de projet Nexa AfriTech">
+
+    <label
+        class="sr-only"
+        for="nom">
+        Votre nom
+    </label>
+
+    <input
+        id="nom"
+        type="text"
+        name="nom"
+        placeholder="Votre nom"
+        autocomplete="name"
+        required>
 
 
-    <label  
-        class="sr-only"  
-        for="nom">  
+    <label
+        class="sr-only"
+        for="telephone">
+        Votre numéro de téléphone ou WhatsApp
+    </label>
 
-        Votre nom  
-
-    </label>  
-
-
-    <input  
-        id="nom"  
-        type="text"  
-        name="nom"  
-        placeholder="Votre nom"  
-        autocomplete="name"  
-        required>  
+    <input
+        id="telephone"
+        type="tel"
+        name="telephone"
+        placeholder="📞 Votre numéro de téléphone / WhatsApp"
+        autocomplete="tel"
+        required>
 
 
-    <label  
-        class="sr-only"  
-        for="telephone">  
+    <label
+        class="sr-only"
+        for="email">
+        Votre adresse e-mail
+    </label>
 
-        Votre numéro de téléphone  
-
-    </label>  
-
-
-    <input  
-        id="telephone"  
-        type="tel"  
-        name="telephone"  
-        placeholder="Votre numéro de téléphone"  
-        autocomplete="tel"  
-        required>  
+    <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="📧 Votre adresse e-mail"
+        autocomplete="email"
+        required>
 
 
-    <label  
-        class="sr-only"  
-        for="email">  
+    <label
+        class="sr-only"
+        for="service">
+        Domaine de votre projet
+    </label>
 
-        Votre adresse e-mail  
+    <select
+        id="service"
+        name="service"
+        required>
 
-    </label>  
+        <option value="" disabled selected>
+            🛠️ Choisissez votre domaine
+        </option>
 
+        <option value="Électricité bâtiment">
+            ⚡ Électricité bâtiment
+        </option>
 
-    <input  
-        id="email"  
-        type="email"  
-        name="email"  
-        placeholder="Votre adresse e-mail"  
-        autocomplete="email"  
-        required>  
+        <option value="Froid industriel">
+            ❄️ Froid industriel
+        </option>
 
+        <option value="Climatisation">
+            🌬️ Climatisation
+        </option>
 
-    <label  
-        class="sr-only"  
-        for="message">  
+        <option value="Autre">
+            🔧 Autre demande
+        </option>
 
-        Décrivez votre projet  
-
-    </label>  
-
-
-    <textarea  
-        id="message"  
-        name="message"  
-        rows="6"  
-        placeholder="Décrivez votre projet..."  
-        required></textarea>  
+    </select>
 
 
-    <button type="submit">  
-        Envoyer le message  
-    </button>  
+    <label
+        class="sr-only"
+        for="localisation">
+        Localisation du projet
+    </label>
 
-</form>  
+    <input
+        id="localisation"
+        type="text"
+        name="localisation"
+        placeholder="📍 Localisation du projet"
+        autocomplete="street-address"
+        required>
+
+
+    <label
+        class="sr-only"
+        for="message">
+        Décrivez votre projet
+    </label>
+
+    <textarea
+        id="message"
+        name="message"
+        rows="6"
+        placeholder="📝 Décrivez votre projet..."
+        required></textarea>
+
+
+    <button type="submit">
+        📤 Envoyer ma demande
+    </button>
+
+</form>
 
 
 
