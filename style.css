@@ -1942,3 +1942,67 @@ textarea:focus-visible {
     }
 
         }
+    /* =========================================
+   BOUTON WHATSAPP - HERO
+========================================= */
+
+.hero-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 14px 24px;
+
+    border-radius: 10px;
+    border: 2px solid #25D366;
+
+    background: #25D366;
+    color: #ffffff;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow: 0 5px 14px rgba(37, 211, 102, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.hero-whatsapp:hover {
+    background: #1ebe5d;
+    border-color: #1ebe5d;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(37, 211, 102, 0.32);
+}
+
+.hero-whatsapp:active {
+    transform: scale(0.97);
+}
+
+/* =========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+
+    .hero-whatsapp {
+        width: 100%;
+        box-sizing: border-box;
+
+        margin-left: 0;
+        margin-top: 12px;
+
+        padding: 15px 18px;
+
+        font-size: 1rem;
+    }
+
+}
