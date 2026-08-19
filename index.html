@@ -691,13 +691,21 @@
         Votre nom
     </label>
 
-    <input
-        id="nom"
-        type="text"
-        name="nom"
-        placeholder="Votre nom"
-        autocomplete="name"
-        required>
+    <label
+    class="sr-only"
+    for="nom">
+
+    Nom et prénom
+
+</label>
+
+<input
+    id="nom"
+    type="text"
+    name="nom"
+    placeholder="Nom et prénom"
+    autocomplete="name"
+    required>
 
 
     <label
@@ -844,12 +852,18 @@
 
     </select>
 
-
     <label
-        class="sr-only"
-        for="date-souhaitee">
-        Date souhaitée
-    </label>
+    for="date-souhaitee"
+    class="form-label">
+
+    📅 Date souhaitée (facultatif)
+
+</label>
+
+<input
+    id="date-souhaitee"
+    type="date"
+    name="date_souhaitee">
 
     <input
         id="date-souhaitee"
