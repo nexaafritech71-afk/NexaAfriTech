@@ -2065,3 +2065,50 @@ footer p {
     }
 
 }
+    /* =========================================
+   BOUTONS CONTACT - DOMAINES
+========================================= */
+
+.contact-call-button,
+.contact-whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.contact-call-button {
+    background: #061b3a;
+    box-shadow: 0 5px 14px rgba(6, 27, 58, 0.22);
+}
+
+.contact-whatsapp-button {
+    background: #25D366;
+    box-shadow: 0 5px 14px rgba(37, 211, 102, 0.25);
+}
+
+.contact-call-button:hover,
+.contact-whatsapp-button:hover {
+    transform: translateY(-2px);
+}
+
+.contact-call-button:active,
+.contact-whatsapp-button:active {
+    transform: scale(0.97);
+}
+
+.contact-phone {
+    margin: 8px 0;
+}
