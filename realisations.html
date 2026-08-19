@@ -555,24 +555,30 @@
      FORMULAIRE CLIENT
 ========================== -->
 
-<form
+    <form
     class="contact-form-realisation"
     action="https://formspree.io/f/xrpzeogd"
     method="POST">
 
     <h3>
-        Parlons de votre projet
+        Présentez-nous votre projet
     </h3>
 
     <p class="form-intro">
-        Décrivez-nous votre besoin et notre équipe
-        vous contactera rapidement.
+        Décrivez votre projet et vos besoins.
+        Notre équipe Nexa AfriTech étudiera votre demande
+        et vous contactera pour les prochaines étapes.
     </p>
+
+    <!-- Sujet de l'e-mail reçu -->
+    <input
+        type="hidden"
+        name="subject"
+        value="Nouvelle demande de projet - Nexa AfriTech">
 
     <div class="contact-form-grid">
 
-
-        <!-- NOM ET PRÉNOM -->
+        <!-- NOM -->
 
         <div class="form-group">
 
@@ -585,6 +591,7 @@
                 id="nom"
                 name="nom"
                 placeholder="Votre nom et prénom"
+                autocomplete="name"
                 required>
 
         </div>
@@ -603,6 +610,7 @@
                 id="email"
                 name="email"
                 placeholder="votre@email.com"
+                autocomplete="email"
                 required>
 
         </div>
@@ -613,7 +621,7 @@
         <div class="form-group">
 
             <label for="telephone">
-                Téléphone
+                Téléphone / WhatsApp
             </label>
 
             <input
@@ -621,30 +629,200 @@
                 id="telephone"
                 name="telephone"
                 placeholder="+229 XX XX XX XX XX"
+                autocomplete="tel"
                 required>
 
         </div>
 
 
-        <!-- TYPE DE PROJET -->
+        <!-- DOMAINE -->
 
         <div class="form-group">
 
-            <label for="projet">
-                Type de projet
+            <label for="domaine">
+                Domaine du projet
+            </label>
+
+            <select
+                id="domaine"
+                name="domaine"
+                required>
+
+                <option value="" selected disabled>
+                    Sélectionnez un domaine
+                </option>
+
+                <option value="Électricité bâtiment">
+                    ⚡ Électricité bâtiment
+                </option>
+
+                <option value="Froid industriel">
+                    ❄️ Froid industriel
+                </option>
+
+                <option value="Climatisation">
+                    🌬️ Climatisation
+                </option>
+
+                <option value="Électricité et climatisation">
+                    ⚡🌬️ Électricité + Climatisation
+                </option>
+
+                <option value="Autre">
+                    Autre
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- LOCALISATION -->
+
+        <div class="form-group">
+
+            <label for="localisation">
+                Localisation du projet
             </label>
 
             <input
                 type="text"
-                id="projet"
-                name="projet"
-                placeholder="Électricité, froid, climatisation..."
+                id="localisation"
+                name="localisation"
+                placeholder="Ville, quartier ou zone"
                 required>
 
         </div>
 
 
-        <!-- MESSAGE -->
+        <!-- TYPE DE BÂTIMENT -->
+
+        <div class="form-group">
+
+            <label for="batiment">
+                Type de bâtiment
+            </label>
+
+            <select
+                id="batiment"
+                name="batiment"
+                required>
+
+                <option value="" selected disabled>
+                    Sélectionnez le type
+                </option>
+
+                <option value="Maison">
+                    Maison
+                </option>
+
+                <option value="Appartement">
+                    Appartement
+                </option>
+
+                <option value="Bureau">
+                    Bureau
+                </option>
+
+                <option value="Commerce">
+                    Commerce
+                </option>
+
+                <option value="Atelier">
+                    Atelier
+                </option>
+
+                <option value="Usine / site industriel">
+                    Usine / site industriel
+                </option>
+
+                <option value="Autre">
+                    Autre
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- SUPERFICIE -->
+
+        <div class="form-group">
+
+            <label for="superficie">
+                Superficie / dimensions
+                <span>(facultatif)</span>
+            </label>
+
+            <input
+                type="text"
+                id="superficie"
+                name="superficie"
+                placeholder="Ex. 120 m²">
+
+        </div>
+
+
+        <!-- DATE -->
+
+        <div class="form-group">
+
+            <label for="date-projet">
+                Date souhaitée
+                <span>(facultatif)</span>
+            </label>
+
+            <input
+                type="date"
+                id="date-projet"
+                name="date_projet">
+
+        </div>
+
+
+        <!-- BUDGET -->
+
+        <div class="form-group">
+
+            <label for="budget">
+                Budget estimatif
+                <span>(facultatif)</span>
+            </label>
+
+            <select
+                id="budget"
+                name="budget">
+
+                <option value="" selected>
+                    Je préfère ne pas préciser
+                </option>
+
+                <option value="Moins de 500 000 FCFA">
+                    Moins de 500 000 FCFA
+                </option>
+
+                <option value="500 000 à 1 000 000 FCFA">
+                    500 000 à 1 000 000 FCFA
+                </option>
+
+                <option value="1 000 000 à 5 000 000 FCFA">
+                    1 000 000 à 5 000 000 FCFA
+                </option>
+
+                <option value="Plus de 5 000 000 FCFA">
+                    Plus de 5 000 000 FCFA
+                </option>
+
+                <option value="À définir">
+                    À définir
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- DESCRIPTION -->
 
         <div class="form-group full">
 
@@ -655,7 +833,8 @@
             <textarea
                 id="message"
                 name="message"
-                placeholder="Parlez-nous de votre besoin..."
+                rows="7"
+                placeholder="Expliquez-nous votre besoin : travaux à réaliser, installation souhaitée, équipements concernés, état actuel de l'installation, contraintes particulières..."
                 required></textarea>
 
         </div>
@@ -669,11 +848,17 @@
         type="submit"
         class="contact-submit">
 
-        🚀 Envoyer ma demande
+        🚀 Soumettre mon projet
 
     </button>
 
-</form>
+    <p class="form-note">
+        🔒 Vos informations sont utilisées uniquement
+        pour traiter votre demande.
+    </p>
+
+    </form>
+    
 
 </div>
 
