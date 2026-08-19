@@ -1824,3 +1824,60 @@ textarea:focus-visible {
     }
 
 }
+    /* =========================================
+   CHAMPS DU FORMULAIRE DE CONTACT
+========================================= */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    border: 1px solid #d5dbe3;
+    border-radius: 10px;
+
+    background: #ffffff;
+    color: #071b38;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #061b3a;
+    box-shadow: 0 0 0 3px rgba(6, 27, 58, 0.10);
+}
+
+.contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* =========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 15px 14px;
+        font-size: 1rem;
+    }
+
+}
