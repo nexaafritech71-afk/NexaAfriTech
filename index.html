@@ -688,7 +688,7 @@
     <label
         class="sr-only"
         for="nom">
-        Votre nom et prénom 
+        Votre nom
     </label>
 
     <input
@@ -779,12 +779,148 @@
         required>
 
 
+    <!-- =========================
+         INFORMATIONS FACULTATIVES
+    ========================== -->
+
+    <label
+        class="sr-only"
+        for="superficie">
+        Superficie ou dimensions
+    </label>
+
+    <input
+        id="superficie"
+        type="text"
+        name="superficie_dimensions"
+        placeholder="📐 Superficie / dimensions (facultatif)">
+
+
+    <label
+        class="sr-only"
+        for="batiment">
+        Type de bâtiment
+    </label>
+
+    <select
+        id="batiment"
+        name="type_batiment">
+
+        <option value="" selected>
+            🏢 Type de bâtiment (facultatif)
+        </option>
+
+        <option value="Maison">
+            🏠 Maison
+        </option>
+
+        <option value="Appartement">
+            🏢 Appartement
+        </option>
+
+        <option value="Bureau">
+            🏢 Bureau
+        </option>
+
+        <option value="Commerce">
+            🏪 Commerce
+        </option>
+
+        <option value="Atelier">
+            🏭 Atelier
+        </option>
+
+        <option value="Entrepôt">
+            📦 Entrepôt
+        </option>
+
+        <option value="Bâtiment industriel">
+            🏗️ Bâtiment industriel
+        </option>
+
+        <option value="Autre">
+            🔧 Autre
+        </option>
+
+    </select>
+
+
+    <label
+        class="sr-only"
+        for="date-souhaitee">
+        Date souhaitée
+    </label>
+
+    <input
+        id="date-souhaitee"
+        type="date"
+        name="date_souhaitee"
+        aria-label="Date souhaitée (facultatif)">
+
+
+    <label
+        class="sr-only"
+        for="budget">
+        Budget estimatif
+    </label>
+
+    <input
+        id="budget"
+        type="text"
+        name="budget_estimatif"
+        placeholder="💰 Budget estimatif (facultatif)">
+
+
     <label
         class="sr-only"
         for="message">
         Décrivez votre projet
     </label>
 
+    <label for="superficie">
+    Superficie / dimensions (facultatif)
+</label>
+
+<input
+    id="superficie"
+    type="text"
+    name="superficie"
+    placeholder="Ex : 120 m² ou 8 m × 10 m">
+
+<label for="type-batiment">
+    Type de bâtiment (facultatif)
+</label>
+
+<select id="type-batiment" name="type_batiment">
+    <option value="">Type de bâtiment</option>
+    <option value="Maison">Maison</option>
+    <option value="Appartement">Appartement</option>
+    <option value="Bureau">Bureau</option>
+    <option value="Commerce">Commerce</option>
+    <option value="Atelier">Atelier</option>
+    <option value="Entrepôt">Entrepôt</option>
+    <option value="Bâtiment industriel">Bâtiment industriel</option>
+    <option value="Autre">Autre</option>
+</select>
+
+<label for="date-souhaitee">
+    Date souhaitée (facultatif)
+</label>
+
+<input
+    id="date-souhaitee"
+    type="date"
+    name="date_souhaitee">
+
+<label for="budget">
+    Budget estimatif (facultatif)
+</label>
+
+<input
+    id="budget"
+    type="text"
+    name="budget"
+    placeholder="Ex : 500 000 FCFA">
     <textarea
         id="message"
         name="message"
@@ -799,7 +935,31 @@
 
 </form>
 
+<!-- =========================
+     ENVOI DES PHOTOS WHATSAPP
+========================== -->
 
+<div class="photo-whatsapp">
+
+    <h3>📸 Envoyer des photos de votre projet</h3>
+
+    <p>
+        Vous pouvez nous envoyer des photos du bâtiment,
+        de l'installation ou de l'espace concerné directement
+        sur WhatsApp.
+    </p>
+
+    <a
+        href="https://wa.me/2290162331017?text=Bonjour%20Nexa%20AfriTech%2C%20je%20souhaite%20envoyer%20des%20photos%20concernant%20mon%20projet."
+        class="photo-whatsapp-button"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        📸 Envoyer les photos sur WhatsApp
+
+    </a>
+
+</div>
 
 <div class="contact-info">
 
