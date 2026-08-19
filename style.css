@@ -2237,3 +2237,11 @@ footer p {
         box-sizing: border-box;
     }
 }
+    /* Titre des champs du formulaire */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #071b38;
+    font-weight: bold;
+    font-size: 15px;
+}
