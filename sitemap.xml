@@ -1,21 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">  <url>  
-    <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/</loc>  
-</url>  
+<?xml version="1.0" encoding="UTF-8"?>
 
-<url>  
-    <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/electricite-batiment.html</loc>  
-</url>  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>  
-    <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/froid-industriel.html</loc>  
-</url>  
+    <url>
+        <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/</loc>
+    </url>
 
-<url>  
-    <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/climatisation.html</loc>  
-</url>  
+    <url>
+        <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/electricite-batiment.html</loc>
+    </url>
 
-<url>  
-    <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/realisations.html</loc>  
-</url>
+    <url>
+        <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/froid-industriel.html</loc>
+    </url>
+
+    <url>
+        <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/climatisation.html</loc>
+    </url>
+
+    <url>
+        <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/services.html</loc>
+    </url>
+
+    <url>
+        <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/realisations.html</loc>
+    </url>
+
+    <url>
+        <loc>https://nexaafritech71-afk.github.io/NexaAfriTech/actualites.html</loc>
+    </url>
 
 </urlset>
