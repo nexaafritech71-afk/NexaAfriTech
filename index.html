@@ -1,1281 +1,862 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description"
-        content="Nexa AfriTech — solutions professionnelles en électricité bâtiment, froid industriel et climatisation.">
-
-  <meta name="theme-color" content="#061b3a">
-
-  <title>Nexa AfriTech | L'excellence en Électricité Bâtiment - Froid industriel - Climatisation</title>
-
-  <style>
-    /* =====================================================
-       BASE
-    ===================================================== */
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fa;
-      color: #071b38;
-      line-height: 1.6;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    button,
-    input,
-    select,
-    textarea {
-      font: inherit;
-    }
-
-    button:focus-visible,
-    a:focus-visible,
-    input:focus-visible,
-    select:focus-visible,
-    textarea:focus-visible {
-      outline: 3px solid #ffc400;
-      outline-offset: 3px;
-    }
+<!DOCTYPE html>  <html lang="fr">  <head>  <meta charset="UTF-8">  
 
+<meta  
+    name="viewport"  
+    content="width=device-width, initial-scale=1.0">  
 
-    /* =====================================================
-       MENU
-    ===================================================== */
+<!-- =========================  
+     SEO PRINCIPAL  
+========================== -->  
 
-    .navbar {
-      min-height: 75px;
-      background: #061b3a;
+<title>  
+    Nexa AfriTech | Électricité bâtiment, Froid industriel & Climatisation au Bénin  
+</title>  
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+<meta  
+    name="description"  
+    content="Nexa AfriTech au Bénin : spécialiste en électricité bâtiment, installations électriques, froid industriel et climatisation à Zoundja, Abomey-Calavi et Cotonou.">  
 
-      padding: 0 6%;
+<meta  
+    name="robots"  
+    content="index, follow, max-image-preview:large">  
 
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+<meta  
+    name="author"  
+    content="Nexa AfriTech">  
 
-    .brand img {
-      width: 58px;
-      height: 58px;
-      object-fit: contain;
-    }
+<meta  
+    name="theme-color"  
+    content="#061b3a">  
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 35px;
-    }
+<meta  
+    name="referrer"  
+    content="strict-origin-when-cross-origin">  
 
-    .nav-links a {
-      color: white;
-      text-decoration: none;
+<link  
+    rel="canonical"  
+    href="https://nexaafritech71-afk.github.io/NexaAfriTech/">  
 
-      font-size: 16px;
-      font-weight: bold;
 
-      padding: 26px 4px 22px;
+<!-- =========================  
+     FAVICON  
+========================== -->  
 
-      transition: 0.25s;
-    }
+<link  
+    rel="icon"  
+    href="favicon.ico"  
+    type="image/x-icon">  
 
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: #ffc400;
-      border-bottom: 3px solid #ffc400;
-    }
 
-    .menu-toggle {
-      display: none;
+<!-- =========================  
+     OPEN GRAPH  
+========================== -->  
 
-      border: none;
-      background: transparent;
+<meta  
+    property="og:type"  
+    content="website">  
 
-      color: white;
-      font-size: 32px;
+<meta  
+    property="og:locale"  
+    content="fr_BJ">  
 
-      cursor: pointer;
-      padding: 5px;
+<meta  
+    property="og:site_name"  
+    content="Nexa AfriTech">  
 
-      line-height: 1;
+<meta  
+    property="og:title"  
+    content="Nexa AfriTech | Électricité bâtiment, Froid industriel & Climatisation">  
 
-      position: relative;
-      z-index: 10001;
-    }
+<meta  
+    property="og:description"  
+    content="Électricité bâtiment, froid industriel et climatisation à Zoundja, Abomey-Calavi, Cotonou et au Bénin. Des solutions professionnelles pour vos projets.">  
 
+<meta  
+    property="og:url"  
+    content="https://nexaafritech71-afk.github.io/NexaAfriTech/">  
 
-    /* =====================================================
-       ACCUEIL
-    ===================================================== */
+<meta  
+    property="og:image"  
+    content="https://nexaafritech71-afk.github.io/NexaAfriTech/logo.webp">  
 
-    .hero {
-      min-height: 590px;
+<meta  
+    property="og:image:alt"  
+    content="Logo officiel de Nexa AfriTech">  
 
-      background:
-        linear-gradient(
-          115deg,
-          #041936 0%,
-          #07305d 55%,
-          #061b3a 100%
-        );
+<meta  
+    property="og:image:type"  
+    content="image/webp">  
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+<meta  
+    property="og:image:width"  
+    content="1068">  
+
+<meta  
+    property="og:image:height"  
+    content="1057">  
+
+
+<!-- =========================  
+     TWITTER / X  
+========================== -->  
+
+<meta  
+    name="twitter:card"  
+    content="summary_large_image">  
+
+<meta  
+    name="twitter:title"  
+    content="Nexa AfriTech | Électricité bâtiment, Froid industriel & Climatisation">  
+
+<meta  
+    name="twitter:description"  
+    content="Électricité bâtiment, froid industriel et climatisation à Zoundja, Abomey-Calavi, Cotonou et au Bénin.">  
+
+<meta  
+    name="twitter:image"  
+    content="https://nexaafritech71-afk.github.io/NexaAfriTech/logo.webp">  
+
+<meta  
+    name="twitter:image:alt"  
+    content="Logo officiel Nexa AfriTech">  
+
+
+<!-- =========================  
+     DONNÉES STRUCTURÉES  
+     ENTREPRISE LOCALE  
+========================== -->  
+
+<script type="application/ld+json">  
+{  
+  "@context": "https://schema.org",  
+  "@type": "LocalBusiness",  
+
+  "@id": "https://nexaafritech71-afk.github.io/NexaAfriTech/#business",  
+
+  "name": "Nexa AfriTech",  
+
+  "alternateName": "Nexa AfriTech Zoundja Bénin",  
+
+  "url": "https://nexaafritech71-afk.github.io/NexaAfriTech/",  
+
+  "logo": "https://nexaafritech71-afk.github.io/NexaAfriTech/logo.webp",  
+
+  "image": "https://nexaafritech71-afk.github.io/NexaAfriTech/logo.webp",  
+
+  "description": "Nexa AfriTech est une entreprise spécialisée en électricité bâtiment, installations électriques, froid industriel et climatisation au Bénin.",  
+
+  "telephone": [  
+    "+229 01 62 33 10 17",  
+    "+229 01 95 41 12 31"  
+  ],  
+
+  "email": "nexaafritech71@gmail.com",  
+
+  "address": {  
+    "@type": "PostalAddress",  
+    "addressLocality": "Zoundja, Abomey-Calavi",  
+    "addressRegion": "Atlantique",  
+    "addressCountry": "BJ"  
+  },  
+
+  "areaServed": [  
+    {  
+      "@type": "Place",  
+      "name": "Zoundja"  
+    },  
+    {  
+      "@type": "City",  
+      "name": "Abomey-Calavi"  
+    },  
+    {  
+      "@type": "City",  
+      "name": "Cotonou"  
+    },  
+    {  
+      "@type": "Country",  
+      "name": "Bénin"  
+    },  
+    {  
+      "@type": "Country",  
+      "name": "Côte d’Ivoire"  
+    }  
+  ],  
+
+  "serviceType": [  
+    "Électricité bâtiment",  
+    "Installations électriques",  
+    "Froid industriel",  
+    "Climatisation",  
+    "Maintenance électrique",  
+    "Maintenance climatisation"  
+  ],  
+
+  "knowsAbout": [  
+    "Électricité bâtiment",  
+    "Installations électriques",  
+    "Électricité bâtiment au Bénin",  
+    "Froid industriel",  
+    "Froid industriel au Bénin",  
+    "Climatisation",  
+    "Climatisation au Bénin",  
+    "Maintenance électrique",  
+    "Maintenance climatisation"  
+  ],  
+
+  "contactPoint": {  
+    "@type": "ContactPoint",  
+    "telephone": "+229 01 62 33 10 17",  
+    "contactType": "customer service",  
+    "areaServed": "BJ",  
+    "availableLanguage": "French"  
+  }  
+}  
+</script>  
+
+
+<!-- =========================  
+     DONNÉES STRUCTURÉES  
+     SITE WEB  
+========================== -->  
+
+<script type="application/ld+json">  
+{  
+  "@context": "https://schema.org",  
+  "@type": "WebSite",  
+
+  "@id": "https://nexaafritech71-afk.github.io/NexaAfriTech/#website",  
+
+  "url": "https://nexaafritech71-afk.github.io/NexaAfriTech/",  
+
+  "name": "Nexa AfriTech",  
 
-      padding: 65px 8%;
+  "description": "Site officiel de Nexa AfriTech, entreprise spécialisée en électricité bâtiment, froid industriel et climatisation au Bénin.",  
 
-      position: relative;
-      overflow: hidden;
-    }
+  "inLanguage": "fr-BJ",  
 
-    .hero::after {
-      content: "";
+  "publisher": {  
+    "@id": "https://nexaafritech71-afk.github.io/NexaAfriTech/#business"  
+  }  
+}  
+</script>  
 
-      position: absolute;
 
-      width: 180px;
-      height: 700px;
+<!-- =========================  
+     CSS  
+========================== -->  
 
-      background: #ffc400;
+<link  
+    rel="stylesheet"  
+    href="style.css">
 
-      right: -100px;
-      top: -70px;
+</head>  <body>  <header class="navbar">  <a  
+    href="index.html"  
+    class="brand"  
+    aria-label="Nexa AfriTech - Accueil">  
 
-      transform: rotate(32deg);
+    <img  
+        src="logo.webp"  
+        width="1068"  
+        height="1057"  
+        alt="Logo officiel Nexa AfriTech"  
+        decoding="async">  
 
-      opacity: 0.95;
-    }
+</a>  
 
-    .hero-content {
-      width: 58%;
 
-      position: relative;
-      z-index: 2;
-    }
+<nav  
+    class="nav-links"  
+    id="navLinks"  
+    aria-label="Navigation principale">  
 
-    .hero-small {
-      color: #ffc400;
+    <a  
+        href="index.html"  
+        class="active">  
 
-      font-size: 14px;
-      font-weight: bold;
+        Accueil  
 
-      letter-spacing: 2px;
+    </a>  
 
-      margin-bottom: 16px;
-    }
+    <a href="#services">  
+        Services  
+    </a>  
 
-    /*
-       UN SEUL MESSAGE DE BIENVENUE
-    */
+    <a href="electricite-batiment.html">  
+        Électricité bâtiment  
+    </a>  
 
-    .hero h1 {
-      color: white;
+    <a href="froid-industriel.html">  
+        Froid industriel  
+    </a>  
 
-      font-size: clamp(45px, 7vw, 82px);
+    <a href="climatisation.html">  
+        Climatisation  
+    </a>  
 
-      line-height: 0.98;
+    <a href="realisations.html">  
+        Réalisations  
+    </a>  
 
-      margin-bottom: 22px;
-    }
+    <a href="#contact">  
+        Contact  
+    </a>  
 
-    .hero h1 span {
-      color: #ffc400;
-    }
+</nav>  
 
-    .hero-text {
-      color: white;
 
-      font-size: 21px;
-      line-height: 1.55;
+<button  
+    class="menu-toggle"  
+    id="menuToggle"  
+    type="button"  
+    aria-label="Ouvrir le menu"  
+    aria-expanded="false"  
+    aria-controls="navLinks">  
 
-      font-weight: 600;
+    ☰  
 
-      max-width: 650px;
+</button>
 
-      margin-bottom: 25px;
-    }
+</header>  <!-- =========================  
+     POURQUOI NOUS CHOISIR  
+========================== -->  <section class="why-us">  <p class="section-subtitle">  
+    NOTRE ENGAGEMENT  
+</p>  
 
 
-    /* =====================================================
-       BOUTONS APPEL + WHATSAPP
-    ===================================================== */
+<h2>  
+    Pourquoi choisir Nexa AfriTech au Bénin ?  
+</h2>  
 
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
 
-    .call-button,
-    .hero-whatsapp {
-      display: inline-flex;
+<div class="yellow-line"></div>  
 
-      align-items: center;
-      justify-content: center;
 
-      padding: 14px 23px;
+<p class="why-intro">  
 
-      border-radius: 10px;
+    Nous mettons notre expertise et notre savoir-faire  
+    au service de chaque projet.  
 
-      text-decoration: none;
+</p>  
 
-      font-weight: bold;
 
-      transition: 0.25s;
-    }
+<div class="why-grid">  
 
-    .call-button {
-      background: white;
-      color: #061b3a;
 
-      border: 2px solid white;
+    <div class="why-card">  
 
-      box-shadow:
-        0 5px 14px rgba(0, 0, 0, 0.18);
-    }
+        <div class="why-icon">  
+            ⚡  
+        </div>  
 
-    .call-button:hover {
-      background: #061b3a;
-      color: white;
+        <h3>  
+            Expertise technique  
+        </h3>  
 
-      transform: translateY(-2px);
-    }
+        <p>  
+            Des solutions professionnelles adaptées  
+            aux exigences de chaque installation.  
+        </p>  
 
-    .hero-whatsapp {
-      background: #25d366;
-      color: white;
+    </div>  
 
-      border: 2px solid #25d366;
 
-      box-shadow:
-        0 5px 14px rgba(37, 211, 102, 0.25);
-    }
 
-    .hero-whatsapp:hover {
-      background: #1ebe5d;
-      border-color: #1ebe5d;
+    <div class="why-card">  
 
-      transform: translateY(-2px);
-    }
+        <div class="why-icon">  
+            🛡️  
+        </div>  
 
+        <h3>  
+            Sécurité & qualité  
+        </h3>  
 
-    /* =====================================================
-       LOGO ACCUEIL
-    ===================================================== */
+        <p>  
+            Nous accordons une priorité absolue à la  
+            sécurité, à la qualité et à la fiabilité.  
+        </p>  
 
-    .hero-logo {
-      width: 35%;
+    </div>  
 
-      display: flex;
-      justify-content: center;
 
-      position: relative;
-      z-index: 2;
-    }
 
-    .hero-logo img {
-      width: 200px;
-      height: 200px;
+    <div class="why-card">  
 
-      object-fit: contain;
+        <div class="why-icon">  
+            ⏱️  
+        </div>  
 
-      background: white;
+        <h3>  
+            Respect des délais  
+        </h3>  
 
-      border-radius: 50%;
+        <p>  
+            Une organisation rigoureuse pour assurer  
+            l'avancement efficace de vos projets.  
+        </p>  
 
-      padding: 8px;
+    </div>  
 
-      box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.35);
-    }
 
 
-    /* =====================================================
-       À PROPOS
-    ===================================================== */
+    <div class="why-card">  
 
-    .about {
-      background: white;
+        <div class="why-icon">  
+            🤝  
+        </div>  
 
-      padding: 65px 7%;
+        <h3>  
+            Accompagnement  
+        </h3>  
 
-      text-align: center;
-    }
+        <p>  
+            Nous vous accompagnons de l'étude du projet  
+            jusqu'à sa réalisation.  
+        </p>  
 
-    .section-subtitle {
-      color: #ffc400;
+    </div>  
 
-      font-size: 14px;
-      font-weight: bold;
 
-      letter-spacing: 2px;
+</div>
 
-      margin-bottom: 10px;
-    }
+</section>  <!-- =========================  
+     HERO  
+========================== -->  <section class="hero">  <div class="hero-content">  
 
-    .section-title {
-      color: #071b38;
+    <p class="hero-small">  
+        L'INNOVATION AU SERVICE DE L'EXCELLENCE  
+    </p>  
 
-      font-size: 35px;
 
-      margin-bottom: 12px;
-    }
+    <h1>  
+        Nexa <span>AfriTech</span>  
+    </h1>  
 
-    .yellow-line {
-      width: 65px;
-      height: 5px;
 
-      background: #ffc400;
+    <p class="hero-text">  
 
-      margin: 0 auto 30px;
-    }
+        Électricité bâtiment au Bénin<br>  
+        Froid industriel<br>  
+        Climatisation<br>  
+        Zoundja · Abomey-Calavi · Cotonou  
 
-    .about p.about-text {
-      max-width: 850px;
+    </p>  
 
-      margin: auto;
 
-      color: #444;
+    <a  
+        href="tel:+2290162331017"  
+        class="call-button"  
+        aria-label="Appeler Nexa AfriTech">  
 
-      font-size: 18px;
+        Appelez-nous  
 
-      line-height: 1.7;
-    }
+    </a>  
 
+</div>  
 
-    /* =====================================================
-       POURQUOI NOUS CHOISIR
-       (aucun service / aucune réalisation)
-    ===================================================== */
 
-    .why-us {
-      background: #061b3a;
+<div class="hero-logo">  
 
-      color: white;
+    <img  
+        src="logo.webp"  
+        loading="eager"  
+        fetchpriority="high"  
+        decoding="async"  
+        width="1068"  
+        height="1057"  
+        alt="Nexa AfriTech - électricité bâtiment, froid industriel et climatisation au Bénin">  
 
-      text-align: center;
+</div>
 
-      padding: 70px 7%;
-    }
+</section>  <!-- =========================  
+     QUI SOMMES-NOUS  
+========================== -->  <section class="about">  <h2>  
+    Nexa AfriTech : électricité, froid industriel et climatisation au Bénin  
+</h2>  
 
-    .why-us .section-title {
-      color: white;
-    }
 
-    .why-intro {
-      max-width: 700px;
+<div class="yellow-line"></div>  
 
-      margin: 0 auto 40px;
 
-      color: #dce3ed;
+<p>  
 
-      font-size: 17px;
+    Nexa AfriTech est une entreprise spécialisée dans  
+    l'électricité bâtiment, les installations électriques,  
+    le froid industriel et la climatisation.  
 
-      line-height: 1.6;
-    }
+    Basée à Zoundja, Abomey-Calavi, nous proposons  
+    des solutions modernes, fiables et adaptées  
+    aux besoins de nos clients au Bénin.  
 
-    .why-grid {
-      max-width: 1100px;
+</p>
 
-      margin: auto;
+</section>  <!-- =========================  
+     SEO LOCAL  
+========================== -->  <div  
+    class="local-seo"  
+    aria-label="Zone d’intervention">  <h3>  
+    Nos services à Zoundja, Abomey-Calavi, Cotonou et au Bénin  
+</h3>  
 
-      display: grid;
 
-      grid-template-columns:
-        repeat(4, minmax(0, 1fr));
+<p>  
 
-      gap: 22px;
-    }
+    Nexa AfriTech accompagne les particuliers,  
+    professionnels et projets de construction pour leurs  
+    besoins en électricité bâtiment, installations électriques,  
+    froid industriel et climatisation.  
 
-    .why-card {
-      background: white;
+    Nous intervenons notamment à Zoundja, Abomey-Calavi,  
+    Cotonou et dans différentes zones du Bénin selon les projets.  
 
-      color: #071b38;
+</p>
 
-      padding: 30px 22px;
+</div>  <!-- =========================  
+     SERVICES  
+========================== -->  <section  
+    class="services"  
+    id="services">  <h2>  
+    Nos services  
+</h2>  
 
-      border-radius: 15px;
 
-      box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.15);
+<div class="yellow-line"></div>  
 
-      transition: 0.3s;
-    }
 
-    .why-card:hover {
-      transform: translateY(-6px);
-    }
+<div class="services-grid">  
 
-    .why-icon {
-      width: 65px;
-      height: 65px;
 
-      margin: 0 auto 18px;
+    <div class="service-card">  
 
-      background: #ffc400;
+        <div class="service-icon">  
+            ⚡  
+        </div>  
 
-      border-radius: 50%;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+        <h3>  
+            <a href="electricite-batiment.html">  
+                Électricité bâtiment  
+            </a>  
+        </h3>  
 
-      font-size: 30px;
-    }
 
-    .why-card h3 {
-      font-size: 19px;
+        <div class="small-line"></div>  
 
-      margin-bottom: 12px;
-    }
 
-    .why-card p {
-      color: #555;
+        <p>  
 
-      font-size: 15px;
+            Installations électriques modernes,  
+            sécurisées et professionnelles pour  
+            bâtiments et projets de construction.  
 
-      line-height: 1.6;
-    }
+        </p>  
 
+    </div>  
 
-    /* =====================================================
-       CONTACT
-    ===================================================== */
 
-    .contact {
-      background: white;
 
-      padding: 70px 20px;
+    <div class="service-card">  
 
-      text-align: center;
-    }
+        <div class="service-icon">  
+            ❄️  
+        </div>  
 
-    .contact-description {
-      max-width: 750px;
 
-      margin: 0 auto 35px;
+        <h3>  
+            <a href="froid-industriel.html">  
+                Froid industriel  
+            </a>  
+        </h3>  
 
-      color: #555;
 
-      font-size: 17px;
+        <div class="small-line"></div>  
 
-      line-height: 1.7;
-    }
 
-    .contact-actions {
-      display: flex;
+        <p>  
 
-      flex-wrap: wrap;
+            Solutions de froid industriel fiables,  
+            performantes et adaptées aux besoins  
+            professionnels.  
 
-      justify-content: center;
+        </p>  
 
-      gap: 14px;
+    </div>  
 
-      max-width: 900px;
 
-      margin: 0 auto 40px;
-    }
 
-    .contact-action {
-      display: inline-flex;
+    <div class="service-card">  
 
-      align-items: center;
-      justify-content: center;
+        <div class="service-icon">  
+            ❄️  
+        </div>  
 
-      min-width: 220px;
-      min-height: 52px;
 
-      padding: 13px 22px;
+        <h3>  
+            <a href="climatisation.html">  
+                Climatisation  
+            </a>  
+        </h3>  
 
-      border-radius: 30px;
 
-      text-decoration: none;
+        <div class="small-line"></div>  
 
-      font-size: 15px;
-      font-weight: bold;
 
-      transition: 0.25s;
-    }
+        <p>  
 
-    .contact-action.call {
-      background: #ffc400;
-      color: #071b38;
-    }
+            Installation, entretien et maintenance  
+            de systèmes de climatisation performants.  
 
-    .contact-action.call:hover {
-      background: #ffd633;
+        </p>  
 
-      transform: translateY(-3px);
-    }
+    </div>  
 
-    .contact-action.whatsapp-btn {
-      background: #25d366;
-      color: white;
-    }
 
-    .contact-action.whatsapp-btn:hover {
-      background: #1ebe5d;
+</div>
 
-      transform: translateY(-3px);
-    }
+</section>  <!-- =========================  
+     AVIS GOOGLE  
+========================== -->  <section  
+    class="google-reviews"  
+    aria-labelledby="google-reviews-title">  <p class="section-subtitle">  
+    VOTRE AVIS COMPTE  
+</p>  
 
-    .contact-action.email {
-      background: #061b3a;
-      color: white;
-    }
 
-    .contact-action.email:hover {
-      background: #0b2d5c;
+<h2 id="google-reviews-title">  
+    Votre expérience avec Nexa AfriTech  
+</h2>  
 
-      transform: translateY(-3px);
-    }
 
+<div class="yellow-line"></div>  
 
-    /* =====================================================
-       FORMULAIRE CLIENT
-    ===================================================== */
 
-    .contact-form {
-      max-width: 760px;
+<p class="google-reviews-text">  
 
-      margin: 10px auto 0;
+    Vous avez fait confiance à Nexa AfriTech pour votre projet ?  
+    Partagez votre expérience et aidez-nous à améliorer continuellement  
+    la qualité de nos services.  
 
-      padding: 30px;
+</p>  
 
-      background: #ffffff;
 
-      border-radius: 18px;
+<a  
+    href="https://g.page/r/CdScLRGfyxUdEAE/review"  
+    class="google-review-button"  
+    target="_blank"  
+    rel="noopener noreferrer"  
+    aria-label="Laisser un avis Google sur Nexa AfriTech">  
 
-      box-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.12);
+    ⭐ Laisser un avis Google  
 
-      text-align: left;
-    }
+</a>
 
-    .contact-form h3 {
-      color: #071b38;
+</section>  <!-- =========================  
+     CONTACT  
+========================== -->  <section  
+    class="contact"  
+    id="contact">  <h2>  
+    Contactez Nexa AfriTech au Bénin  
+</h2>  
 
-      text-align: center;
 
-      font-size: 24px;
+<div class="yellow-line"></div>  
 
-      margin-bottom: 8px;
-    }
 
-    .form-intro {
-      color: #666;
+<p>  
+    Parlons de votre prochain projet d'électricité,  
+    de froid industriel ou de climatisation.  
+</p>  
 
-      text-align: center;
 
-      font-size: 15px;
+<form  
+    class="contact-form"  
+    action="https://formspree.io/f/xrpzeogd"  
+    method="POST"  
+    aria-label="Formulaire de contact Nexa AfriTech">  
 
-      line-height: 1.6;
 
-      margin-bottom: 25px;
-    }
+    <label  
+        class="sr-only"  
+        for="nom">  
 
-    .form-grid {
-      display: grid;
+        Votre nom  
 
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+    </label>  
 
-      gap: 16px;
-    }
 
-    .form-group {
-      display: flex;
+    <input  
+        id="nom"  
+        type="text"  
+        name="nom"  
+        placeholder="Votre nom"  
+        autocomplete="name"  
+        required>  
 
-      flex-direction: column;
 
-      gap: 7px;
-    }
+    <label  
+        class="sr-only"  
+        for="telephone">  
 
-    .form-group.full {
-      grid-column: 1 / -1;
-    }
+        Votre numéro de téléphone  
 
-    .form-group label {
-      color: #071b38;
+    </label>  
 
-      font-size: 14px;
 
-      font-weight: bold;
-    }
+    <input  
+        id="telephone"  
+        type="tel"  
+        name="telephone"  
+        placeholder="Votre numéro de téléphone"  
+        autocomplete="tel"  
+        required>  
 
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
 
-      padding: 14px 15px;
+    <label  
+        class="sr-only"  
+        for="email">  
 
-      border: 1px solid #d7dce3;
+        Votre adresse e-mail  
 
-      border-radius: 10px;
+    </label>  
 
-      background: #f8f9fb;
 
-      color: #071b38;
+    <input  
+        id="email"  
+        type="email"  
+        name="email"  
+        placeholder="Votre adresse e-mail"  
+        autocomplete="email"  
+        required>  
 
-      outline: none;
 
-      transition: 0.25s;
-    }
+    <label  
+        class="sr-only"  
+        for="message">  
 
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      border-color: #ffc400;
+        Décrivez votre projet  
 
-      background: white;
+    </label>  
 
-      box-shadow:
-        0 0 0 3px rgba(255, 196, 0, 0.15);
-    }
 
-    .form-group input {
-      height: 52px;
-    }
+    <textarea  
+        id="message"  
+        name="message"  
+        rows="6"  
+        placeholder="Décrivez votre projet..."  
+        required></textarea>  
 
-    .form-group textarea {
-      min-height: 150px;
 
-      resize: vertical;
-    }
+    <button type="submit">  
+        Envoyer le message  
+    </button>  
 
-    .contact-submit {
-      width: 100%;
+</form>  
 
-      margin-top: 18px;
 
-      padding: 15px;
 
-      border: none;
+<div class="contact-info">  
 
-      border-radius: 30px;
+    <p>  
+        📞 +229 01 62 33 10 17  
+    </p>  
 
-      background: #ffc400;
 
-      color: #071b38;
+    <p>  
+        📞 +229 01 95 41 12 31  
+    </p>  
 
-      font-weight: bold;
 
-      cursor: pointer;
+    <a  
+        href="https://wa.me/2290162331017"  
+        target="_blank"  
+        rel="noopener noreferrer"  
+        aria-label="Contacter Nexa AfriTech sur WhatsApp">  
 
-      transition: 0.25s;
-    }
+        💬 Nous contacter sur WhatsApp  
 
-    .contact-submit:hover {
-      background: #ffd633;
+    </a>  
 
-      transform: translateY(-2px);
+</div>  
 
-      box-shadow:
-        0 6px 15px rgba(0, 0, 0, 0.15);
-    }
 
 
-    /* =====================================================
-       AVIS GOOGLE + QR CODE
-    ===================================================== */
+<!-- =========================  
+     QR CODE AVIS GOOGLE  
+========================== -->  
 
-    .google-review {
-      max-width: 620px;
+<div class="google-review">  
 
-      margin: 45px auto 0;
+    <h3>  
+        Votre avis compte pour nous ⭐  
+    </h3>  
 
-      padding: 30px 22px;
 
-      text-align: center;
+    <p>  
 
-      background: white;
+        Scannez le QR Code pour accéder directement  
+        à notre fiche Google et partager votre expérience  
+        avec Nexa AfriTech.  
 
-      border-radius: 18px;
+    </p>  
 
-      box-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.10);
-    }
 
-    .google-review h3 {
-      color: #061b3a;
+    <div class="qr-code-box">  
 
-      margin-bottom: 12px;
+        <img  
+            src="qr-google-avis.png"  
+            alt="QR Code pour laisser un avis Google à Nexa AfriTech"  
+            loading="lazy"  
+            decoding="async"  
+            width="600"  
+            height="600">  
 
-      font-size: 24px;
-    }
+    </div>  
 
-    .google-review p {
-      color: #555;
 
-      margin-bottom: 20px;
-    }
+    <a  
+        href="https://g.page/r/CdScLRGfyxUdEAE/review"  
+        class="google-review-button"  
+        target="_blank"  
+        rel="noopener noreferrer"  
+        aria-label="Laisser un avis Google sur Nexa AfriTech">  
 
-    .qr-code-box {
-      width: min(100%, 300px);
+        ⭐ Laisser un avis sur Google  
 
-      margin: 20px auto;
+    </a>  
 
-      padding: 10px;
+</div>
 
-      background: white;
+</section>  <!-- =========================  
+     WHATSAPP  
+========================== -->  <a  
+href="https://wa.me/2290162331017"  
+class="whatsapp"  
+target="_blank"  
+rel="noopener noreferrer"  
+aria-label="Contacter Nexa AfriTech sur WhatsApp">
 
-      border: 3px solid #061b3a;
+☎
 
-      border-radius: 15px;
-    }
+</a>  <!-- =========================  
+     PIED DE PAGE  
+========================== -->  <footer>  <img  
+    src="logo.webp"  
+    width="1068"  
+    height="1057"  
+    loading="lazy"  
+    decoding="async"  
+    alt="Logo officiel Nexa AfriTech">  
 
-    .qr-code-box img {
-      width: 100%;
 
-      height: auto;
-    }
+<p>  
 
-    .google-review-button {
-      display: inline-block;
+    © 2026 Nexa AfriTech —  
+    Électricité bâtiment · Froid industriel · Climatisation —  
+    Bénin.  
 
-      padding: 13px 23px;
+</p>
 
-      background: #061b3a;
-
-      color: white;
-
-      text-decoration: none;
-
-      font-weight: bold;
-
-      border-radius: 30px;
-
-      transition: 0.25s;
-    }
-
-    .google-review-button:hover {
-      background: #ffc400;
-
-      color: #071b38;
-    }
-
-
-    /* =====================================================
-       WHATSAPP FLOTTANT
-    ===================================================== */
-
-    .whatsapp {
-      position: fixed;
-
-      right: 20px;
-      bottom: 20px;
-
-      width: 62px;
-      height: 62px;
-
-      border-radius: 50%;
-
-      background: #25d366;
-
-      color: white;
-
-      display: flex;
-
-      align-items: center;
-      justify-content: center;
-
-      text-decoration: none;
-
-      font-size: 29px;
-
-      box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.25);
-
-      z-index: 9998;
-
-      transition: 0.25s;
-    }
-
-    .whatsapp:hover {
-      transform: scale(1.08);
-    }
-
-
-    /* =====================================================
-       FOOTER
-    ===================================================== */
-
-    footer {
-      background: #061b3a;
-
-      color: white;
-
-      text-align: center;
-
-      padding: 35px 20px 25px;
-
-      border-top: 3px solid #ffc400;
-    }
-
-    footer img {
-      width: 80px;
-      height: 80px;
-
-      object-fit: contain;
-
-      margin: 0 auto 13px;
-
-      border-radius: 50%;
-    }
-
-    footer p {
-      max-width: 800px;
-
-      margin: 0 auto;
-
-      color: #e6ebf2;
-
-      font-size: 14px;
-    }
-
-    .footer-links {
-      margin-top: 15px;
-    }
-
-    .footer-links a {
-      color: white;
-
-      text-decoration: none;
-
-      margin: 0 8px;
-
-      font-size: 14px;
-    }
-
-    .footer-links a:hover {
-      color: #ffc400;
-    }
-
-
-    /* =====================================================
-       TABLETTE
-    ===================================================== */
-
-    @media (max-width: 900px) {
-
-      .why-grid {
-        grid-template-columns:
-          repeat(2, minmax(0, 1fr));
-      }
-
-    }
-
-
-    /* =====================================================
-       MOBILE
-    ===================================================== */
-
-    @media (max-width: 768px) {
-
-      .navbar {
-        min-height: 70px;
-
-        padding: 0 18px;
-      }
-
-      .brand img {
-        width: 52px;
-        height: 52px;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-
-      .nav-links {
-        display: none;
-
-        position: absolute;
-
-        top: 70px;
-        left: 0;
-
-        width: 100%;
-
-        background: #061b3a;
-
-        flex-direction: column;
-
-        align-items: stretch;
-
-        gap: 0;
-
-        padding: 8px 0;
-
-        box-shadow:
-          0 8px 18px rgba(0, 0, 0, 0.20);
-      }
-
-      .nav-links.show {
-        display: flex;
-      }
-
-      .nav-links a {
-        display: block;
-
-        width: 100%;
-
-        padding: 16px 24px;
-
-        border-bottom:
-          1px solid rgba(255, 255, 255, 0.12);
-      }
-
-
-      /* ACCUEIL MOBILE */
-
-      .hero {
-        min-height: auto;
-
-        padding: 55px 22px 60px;
-
-        flex-direction: column;
-
-        text-align: center;
-      }
-
-      .hero::after {
-        display: none;
-      }
-
-      .hero-content,
-      .hero-logo {
-        width: 100%;
-      }
-
-      .hero h1 {
-        font-size: 52px;
-      }
-
-      .hero-text {
-        font-size: 18px;
-      }
-
-      .hero-buttons {
-        flex-direction: column;
-      }
-
-      .call-button,
-      .hero-whatsapp {
-        width: 100%;
-      }
-
-      .hero-logo {
-        margin-top: 35px;
-      }
-
-      .hero-logo img {
-        width: 155px;
-        height: 155px;
-
-        margin: auto;
-      }
-
-
-      /* À PROPOS */
-
-      .about {
-        padding: 55px 18px;
-      }
-
-      .section-title {
-        font-size: 30px;
-      }
-
-      .about p.about-text {
-        font-size: 16px;
-      }
-
-
-      /* POURQUOI NOUS */
-
-      .why-us {
-        padding: 55px 20px;
-      }
-
-      .why-grid {
-        grid-template-columns: 1fr;
-
-        gap: 18px;
-      }
-
-
-      /* CONTACT */
-
-      .contact {
-        padding: 55px 16px;
-      }
-
-      .contact-actions {
-        flex-direction: column;
-      }
-
-      .contact-action {
-        width: 100%;
-
-        min-width: 0;
-      }
-
-      .contact-form {
-        padding: 22px 18px;
-      }
-
-      .form-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .form-group.full {
-        grid-column: auto;
-      }
-
-
-      /* GOOGLE */
-
-      .google-review {
-        margin-top: 40px;
-
-        padding: 28px 15px;
-      }
-
-      .qr-code-box {
-        width: min(100%, 300px);
-      }
-
-
-      /* WHATSAPP */
-
-      .whatsapp {
-        width: 58px;
-        height: 58px;
-
-        right: 16px;
-        bottom: 16px;
-      }
-
-
-      /* FOOTER */
-
-      footer {
-        padding: 30px 15px 22px;
-      }
-
-      footer img {
-        width: 80px;
-        height: 80px;
-      }
-
-      footer p {
-        font-size: 13px;
-      }
-
-    }
-  </style>
-</head>
-
-
-<body>
-
-  <!-- ===================================================
-       MENU
-  ==================================================== -->
-
-  <header class="navbar">
-
-    <a
-      class="brand"
-      href="#accueil"
-      aria-label="Nexa AfriTech - Accueil"
-    >
-      <img
-        src="logo.webp"
-        alt="Logo Nexa AfriTech"
-      >
-    </a>
-
-
-    <!-- MENU MOBILE -->
-
-    <button
-      class="menu-toggle"
-      id="menuToggle"
-      type="button"
-      aria-label="Ouvrir le menu"
-      aria-expanded="false"
-      aria-controls="navLinks"
-    >
-      ☰
-    </button>
-
-
-    <!-- NAVIGATION -->
-
-    <nav
-      class="nav-links"
-      id="navLinks"
-      aria-label="Navigation principale"
-    >
-
-      <a
-        href="index.html"
-        class="active"
-      >
-        Accueil
-      </a>
-
-      <a href="#apropos">
-        À propos
-      </a>
-
-      <!-- Pages séparées : pas de services dans l'accueil -->
-
-      <a href="services.html">
-        Services
-      </a>
-
-      <a href="realisations.html">
-        Réalisations
-      </a>
-
-      <a href="#contact">
-        Contact
-      </a>
-
-    </nav>
-
-  </header>
-
-
-  <main>
-
-
-    <!-- =================================================
-         ACCUEIL
-    ================================================== -->
-
-    <section
-      class="hero"
-      id="accueil"
-    >
-
-      <div class="hero-content">
-
-        <p class="hero-small">
-          NEXA AFRITECH
-        </p>
-
-
-        <!-- UN SEUL BIENVENUE -->
-
-        <h1>
-          Bienvenue chez
-          <span>Nexa AfriTech</span>
-        </h1>
-
-
-        <p class="hero-text">
-          Des solutions professionnelles, fiables et performantes
-          pour vos projets techniques.
-        </p>
-
-
-        <!-- BOUTONS -->
-
-        <div class="hero-buttons">
-
-          <a
-            class="call-button"
-            href="tel:+2290162331017"
-          >
-            📞 Appelez-nous
-          </a>
-
-
-          <a
-            class="hero-whatsapp"
-            href="https://wa.me/2290162331017?text=Bonjour%20Nexa%20AfriTech%2C%20je%20souhaite%20avoir%20des%20informations."
-            target="_blank"
-            rel="noopener"
-          >
-            💬 WhatsApp
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- LOGO -->
-
-      <div class="hero-logo">
-
-        <img
-          src="logo.webp"
-          alt="Logo Nexa AfriTech"
-        >
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =================================================
-         À PROPOS
-    ================================================== -->
-
-    <section
-      class="about"
-      id="apropos"
-    >
-
-      <p class="section-subtitle">
-        NEXA AFRITECH
-      </p>
-
-      <h2 class="section-title">
-        À propos de nous
-      </h2>
-
-      <div class="yellow-line"></div>
-
-
-      <p class="about-text">
-
-        Nexa AfriTech accompagne ses clients avec des solutions
-        professionnelles, fiables et adaptées aux exigences
-        des installations modernes.
-
-        <br><br>
-
-        Notre engagement repose sur la qualité du travail,
-        la performance des solutions et la satisfact
+</footer>  <script  
+    src="script.js"  
+    defer>  
+</script>  </body>  </html>
