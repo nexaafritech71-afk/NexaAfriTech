@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="fr-BJ">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Services | Nexa AfriTech — Électricité, Froid industriel & Climatisation
+    </title>
+
+    <meta name="description"
+          content="Découvrez les services de Nexa AfriTech au Bénin : électricité bâtiment, froid industriel et climatisation. Des solutions professionnelles adaptées à vos projets à Abomey-Calavi, Cotonou et environs.">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <meta name="author"
+          content="Nexa AfriTech">
+
+    <meta name="theme-color"
+          content="#061b3a">
+
+    <link rel="canonical"
+          href="https://nexaafritech71-afk.github.io/NexaAfriTech/services.html">
+
+    <!-- Open Graph -->
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:locale"
+          content="fr_BJ">
+
+    <meta property="og:site_name"
+          content="Nexa AfriTech">
+
+    <meta property="og:title"
+          content="Services | Nexa AfriTech">
+
+    <meta property="og:description"
+          content="Électricité bâtiment, froid industriel et climatisation au Bénin. Découvrez les solutions professionnelles proposées par Nexa AfriTech.">
+
+    <meta property="og:url"
+          content="https://nexaafritech71-afk.github.io/NexaAfriTech/services.html">
+
+    <meta property="og:image"
+          content="https://nexaafritech71-afk.github.io/NexaAfriTech/logo.webp">
+
+    <meta property="og:image:alt"
+          content="Logo Nexa AfriTech">
+
+
+    <!-- =========================
+         STYLE
+    ========================== -->
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #071b38;
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           MENU
+        ========================== */
+
+        .navbar {
+            height: 75px;
+
+            background: #061b3a;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 6%;
+
+            position: relative;
+            z-index: 1000;
+        }
+
+        .brand img {
+            width: 58px;
+            height: 58px;
+
+            object-fit: contain;
+
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            padding: 27px 5px 23px;
+
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ffc400;
+
+            border-bottom: 4px solid #ffc400;
+        }
+
+        .menu-toggle {
+            display: none;
+
+            border: none;
+
+            background: transparent;
+
+            color: white;
+
+            font-size: 34px;
+
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           EN-TÊTE SERVICES
+        ========================== */
+
+        .services-header {
+            background: #061b3a;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 65px 20px 55px;
+        }
+
+        .services-header .subtitle {
+            color: #ffc400;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 12px;
+        }
+
+        .services-header h1 {
+            font-size: clamp(35px, 6vw, 52px);
+
+            margin-bottom: 18px;
+        }
+
+        .services-header h1 span {
+            color: #ffc400;
+        }
+
+        .services-header p {
+            max-width: 760px;
+
+            margin: auto;
+
+            color: #dce3ed;
+
+            font-size: 17px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           LIGNE JAUNE
+        ========================== */
+
+        .yellow-line {
+            width: 65px;
+            height: 5px;
+
+            background: #ffc400;
+
+            margin: 20px auto 0;
+        }
+
+
+        /* =========================
+           SERVICES
+        ========================== */
+
+        .services-section {
+            padding: 70px 7%;
+
+            background: #f5f7fa;
+        }
+
+        .services-grid {
+            max-width: 1150px;
+
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 30px;
+        }
+
+
+        /* =========================
+           CARTE SERVICE
+        ========================== */
+
+        .service-card {
+            background: white;
+
+            border-radius: 18px;
+
+            padding: 35px 28px;
+
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.10);
+
+            display: flex;
+
+            flex-direction: column;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 15px 35px rgba(0,0,0,0.16);
+        }
+
+
+        /* =========================
+           ICÔNE
+        ========================== */
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+
+            background: #061b3a;
+
+            color: #ffc400;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 32px;
+
+            margin-bottom: 22px;
+        }
+
+
+        .service-card h2 {
+            color: #071b38;
+
+            font-size: 24px;
+
+            margin-bottom: 12px;
+        }
+
+        .service-line {
+            width: 45px;
+            height: 4px;
+
+            background: #ffc400;
+
+            margin-bottom: 18px;
+        }
+
+        .service-card p {
+            color: #555;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+
+            margin-bottom: 18px;
+        }
+
+
+        .service-card ul {
+            list-style: none;
+
+            margin-bottom: 25px;
+        }
+
+        .service-card li {
+            color: #444;
+
+            font-size: 15px;
+
+            margin-bottom: 9px;
+
+            padding-left: 22px;
+
+            position: relative;
+        }
+
+        .service-card li::before {
+            content: "✓";
+
+            position: absolute;
+
+            left: 0;
+
+            color: #ffc400;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           BOUTON CONTACT
+        ========================== */
+
+        .service-button {
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 100%;
+
+            margin-top: auto;
+
+            padding: 14px 20px;
+
+            background: #ffc400;
+
+            color: #071b38;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .service-button:hover {
+            background: #ffd633;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           BLOC CONTACT
+        ========================== */
+
+        .services-contact {
+            background: #061b3a;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 70px 20px;
+        }
+
+        .services-contact h2 {
+            color: white;
+
+            font-size: clamp(28px, 5vw, 40px);
+
+            margin-bottom: 15px;
+        }
+
+        .services-contact p {
+            max-width: 700px;
+
+            margin: 0 auto 30px;
+
+            color: #dce3ed;
+
+            font-size: 17px;
+        }
+
+
+        .contact-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 14px;
+        }
+
+
+        .contact-button {
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-width: 220px;
+
+            padding: 15px 24px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .call-button {
+            background: #ffc400;
+
+            color: #071b38;
+        }
+
+        .call-button:hover {
+            background: #ffd633;
+
+            transform: translateY(-2px);
+        }
+
+
+        .whatsapp-button {
+            background: #25D366;
+
+            color: white;
+        }
+
+        .whatsapp-button:hover {
+            background: #1ebe5d;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #061b3a;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px 20px 25px;
+
+            border-top: 3px solid #ffc400;
+        }
+
+        footer img {
+            width: 80px;
+            height: 80px;
+
+            object-fit: contain;
+
+            margin-bottom: 12px;
+        }
+
+        footer p {
+            max-width: 750px;
+
+            margin: 0 auto;
+
+            color: #dce3ed;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           WHATSAPP FLOTTANT
+        ========================== */
+
+        .whatsapp-float {
+            position: fixed;
+
+            right: 20px;
+            bottom: 20px;
+
+            width: 62px;
+            height: 62px;
+
+            background: #25D366;
+
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-decoration: none;
+
+            font-size: 29px;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.25);
+
+            z-index: 9999;
+
+            transition: 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+        }
+
+
+        /* =========================
+           ACCESSIBILITÉ
+        ========================== */
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #ffc400;
+
+            outline-offset: 3px;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                height: 70px;
+
+                padding: 0 18px;
+            }
+
+            .brand img {
+                width: 52px;
+                height: 52px;
+            }
+
+            .menu-toggle {
+                display: block;
+
+                position: relative;
+
+                z-index: 10001;
+            }
+
+            .nav-links {
+                display: none !important;
+
+                position: absolute;
+
+                top: 70px;
+                left: 0;
+
+                width: 100%;
+
+                background: #061b3a;
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+                gap: 0;
+
+                z-index: 10000;
+
+                padding: 8px 0;
+            }
+
+            .nav-links.show {
+                display: flex !important;
+            }
+
+            .nav-links a {
+                display: block;
+
+                width: 100%;
+
+                padding: 17px 25px;
+
+                border-bottom:
+                    1px solid rgba(255,255,255,0.12);
+            }
+
+
+            .services-header {
+                padding: 50px 20px 40px;
+            }
+
+            .services-header h1 {
+                font-size: 36px;
+            }
+
+            .services-header p {
+                font-size: 16px;
+            }
+
+
+            .services-section {
+                padding: 50px 18px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+
+                gap: 22px;
+            }
+
+
+            .service-card {
+                padding: 28px 22px;
+            }
+
+
+            .services-contact {
+                padding: 55px 18px;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+            }
+
+            .contact-button {
+                width: 100%;
+            }
+
+
+            .whatsapp-float {
+                width: 58px;
+                height: 58px;
+
+                right: 16px;
+                bottom: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     MENU
+========================== -->
+
+<header class="navbar">
+
+    <a
+        href="index.html"
+        class="brand"
+        aria-label="Retour à l'accueil Nexa AfriTech">
+
+        <img
+            src="logo.webp"
+            width="1068"
+            height="1057"
+            alt="Logo Nexa AfriTech">
+
+    </a>
+
+
+    <button
+        type="button"
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="navLinks">
+
+        ☰
+
+    </button>
+
+
+    <nav
+        class="nav-links"
+        id="navLinks"
+        aria-label="Navigation principale">
+
+        <a href="index.html">
+            Accueil
+        </a>
+
+        <a
+            href="services.html"
+            class="active"
+            aria-current="page">
+
+            Services
+
+        </a>
+
+        <a href="realisations.html">
+            Réalisations
+        </a>
+
+        <a href="actualites.html">
+            Actualités
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================
+     EN-TÊTE
+========================== -->
+
+<section class="services-header">
+
+    <p class="subtitle">
+        NOS DOMAINES D'EXPERTISE
+    </p>
+
+    <h1>
+        Les services de <span>Nexa AfriTech</span>
+    </h1>
+
+    <div class="yellow-line"></div>
+
+    <p>
+        Nexa AfriTech propose des solutions professionnelles
+        en électricité bâtiment, froid industriel et climatisation,
+        adaptées aux besoins des particuliers, entreprises et projets
+        professionnels au Bénin.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================== -->
+
+<section
+    class="services-section"
+    aria-labelledby="services-title">
+
+    <h2
+        id="services-title"
+        style="text-align:center; margin-bottom:40px; font-size:32px;">
+
+        Nos solutions
+
+    </h2>
+
+
+    <div class="services-grid">
+
+
+        <!-- ÉLECTRICITÉ -->
+
+        <article class="service-card">
+
+            <div
+                class="service-icon"
+                aria-hidden="true">
+
+                ⚡
+
+            </div>
+
+            <h2>
+                Électricité bâtiment
+            </h2>
+
+            <div class="service-line"></div>
+
+            <p>
+                Nous réalisons des installations électriques
+                adaptées aux bâtiments résidentiels,
+                professionnels et commerciaux.
+            </p>
+
+            <ul>
+
+                <li>
+                    Installation électrique
+                </li>
+
+                <li>
+                    Tableaux et protections électriques
+                </li>
+
+                <li>
+                    Câblage et distribution
+                </li>
+
+                <li>
+                    Éclairage intérieur et extérieur
+                </li>
+
+                <li>
+                    Maintenance et dépannage
+                </li>
+
+            </ul>
+
+            <a
+                href="index.html#contact"
+                class="service-button">
+
+                Demander un devis
+
+            </a>
+
+        </article>
+
+
+        <!-- FROID INDUSTRIEL -->
+
+        <article class="service-card">
+
+            <div
+                class="service-icon"
+                aria-hidden="true">
+
+                ❄️
+
+            </div>
+
+            <h2>
+                Froid industriel
+            </h2>
+
+            <div class="service-line"></div>
+
+            <p>
+                Des solutions de froid adaptées aux
+                installations professionnelles et aux
+                besoins spécifiques des activités industrielles.
+            </p>
+
+            <ul>
+
+                <li>
+                    Installations frigorifiques
+                </li>
+
+                <li>
+                    Chambres froides
+                </li>
+
+                <li>
+                    Groupes frigorifiques
+                </li>
+
+                <li>
+                    Maintenance des équipements
+                </li>
+
+                <li>
+                    Diagnostic et dépannage
+                </li>
+
+            </ul>
+
+            <a
+                href="index.html#contact"
+                class="service-button">
+
+                Demander un devis
+
+            </a>
+
+        </article>
+
+
+        <!-- CLIMATISATION -->
+
+        <article class="service-card">
+
+            <div
+                class="service-icon"
+                aria-hidden="true">
+
+                🌬️
+
+            </div>
+
+            <h2>
+                Climatisation
+            </h2>
+
+            <div class="service-line"></div>
+
+            <p>
+                Nous proposons des solutions de climatisation
+                pour améliorer le confort thermique des
+                espaces résidentiels et professionnels.
+            </p>
+
+            <ul>
+
+                <li>
+                    Installation de climatiseurs
+                </li>
+
+                <li>
+                    Mise en service
+                </li>
+
+                <li>
+                    Entretien et nettoyage
+                </li>
+
+                <li>
+                    Diagnostic de panne
+                </li>
+
+                <li>
+                    Maintenance préventive
+                </li>
+
+            </ul>
+
+            <a
+                href="index.html#contact"
+                class="service-button">
+
+                Demander un devis
+
+            </a>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section class="services-contact">
+
+    <h2>
+        Un projet à réaliser ?
+    </h2>
+
+    <p>
+        Présentez-nous votre besoin.
+        Notre équipe Nexa AfriTech est à votre disposition
+        pour étudier votre projet et vous accompagner.
+    </p>
+
+
+    <div class="contact-buttons">
+
+        <a
+            href="tel:+2290162331017"
+            class="contact-button call-button"
+            aria-label="Appeler Nexa AfriTech">
+
+            📞 Appelez-nous
+
+        </a>
+
+
+        <a
+            href="https://wa.me/2290162331017?text=Bonjour%20Nexa%20AfriTech%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20vos%20services."
+            class="contact-button whatsapp-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contacter Nexa AfriTech sur WhatsApp">
+
+            💬 WhatsApp
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <img
+        src="logo.webp"
+        width="1068"
+        height="1057"
+        loading="lazy"
+        alt="Nexa AfriTech">
+
+    <p>
+        <strong>Nexa AfriTech</strong><br>
+
+        L'excellence en Électricité Bâtiment –
+        Froid industriel – Climatisation.
+
+        <br><br>
+
+        Zoundja · Abomey-Calavi · Cotonou · Bénin
+
+        <br><br>
+
+        © 2026 Nexa AfriTech. Tous droits réservés.
+    </p>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP FLOTTANT
+========================== -->
+
+<a
+    href="https://wa.me/2290162331017?text=Bonjour%20Nexa%20AfriTech%2C%20je%20souhaite%20avoir%20d
