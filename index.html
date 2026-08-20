@@ -1,986 +1,1281 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
+  <meta name="description"
+        content="Nexa AfriTech — solutions professionnelles en électricité bâtiment, froid industriel et climatisation.">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+  <meta name="theme-color" content="#061b3a">
 
-    <meta
-        name="description"
-        content="Nexa AfriTech — Électricité Bâtiment, Froid industriel et Climatisation. Des solutions professionnelles, fiables et performantes."
-    >
+  <title>Nexa AfriTech | L'excellence en Électricité Bâtiment - Froid industriel - Climatisation</title>
 
-    <meta
-        name="keywords"
-        content="Nexa AfriTech, électricité bâtiment, froid industriel, climatisation, Bénin, Cotonou"
-    >
+  <style>
+    /* =====================================================
+       BASE
+    ===================================================== */
 
-    <meta name="author" content="Nexa AfriTech">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <title>Nexa AfriTech | Électricité Bâtiment - Froid industriel - Climatisation</title>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    <link rel="stylesheet" href="style.css">
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #071b38;
+      line-height: 1.6;
+    }
 
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid #ffc400;
+      outline-offset: 3px;
+    }
+
+
+    /* =====================================================
+       MENU
+    ===================================================== */
+
+    .navbar {
+      min-height: 75px;
+      background: #061b3a;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 6%;
+
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .brand img {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: bold;
+
+      padding: 26px 4px 22px;
+
+      transition: 0.25s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #ffc400;
+      border-bottom: 3px solid #ffc400;
+    }
+
+    .menu-toggle {
+      display: none;
+
+      border: none;
+      background: transparent;
+
+      color: white;
+      font-size: 32px;
+
+      cursor: pointer;
+      padding: 5px;
+
+      line-height: 1;
+
+      position: relative;
+      z-index: 10001;
+    }
+
+
+    /* =====================================================
+       ACCUEIL
+    ===================================================== */
+
+    .hero {
+      min-height: 590px;
+
+      background:
+        linear-gradient(
+          115deg,
+          #041936 0%,
+          #07305d 55%,
+          #061b3a 100%
+        );
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 65px 8%;
+
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 180px;
+      height: 700px;
+
+      background: #ffc400;
+
+      right: -100px;
+      top: -70px;
+
+      transform: rotate(32deg);
+
+      opacity: 0.95;
+    }
+
+    .hero-content {
+      width: 58%;
+
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-small {
+      color: #ffc400;
+
+      font-size: 14px;
+      font-weight: bold;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 16px;
+    }
+
+    /*
+       UN SEUL MESSAGE DE BIENVENUE
+    */
+
+    .hero h1 {
+      color: white;
+
+      font-size: clamp(45px, 7vw, 82px);
+
+      line-height: 0.98;
+
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: #ffc400;
+    }
+
+    .hero-text {
+      color: white;
+
+      font-size: 21px;
+      line-height: 1.55;
+
+      font-weight: 600;
+
+      max-width: 650px;
+
+      margin-bottom: 25px;
+    }
+
+
+    /* =====================================================
+       BOUTONS APPEL + WHATSAPP
+    ===================================================== */
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .call-button,
+    .hero-whatsapp {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 14px 23px;
+
+      border-radius: 10px;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      transition: 0.25s;
+    }
+
+    .call-button {
+      background: white;
+      color: #061b3a;
+
+      border: 2px solid white;
+
+      box-shadow:
+        0 5px 14px rgba(0, 0, 0, 0.18);
+    }
+
+    .call-button:hover {
+      background: #061b3a;
+      color: white;
+
+      transform: translateY(-2px);
+    }
+
+    .hero-whatsapp {
+      background: #25d366;
+      color: white;
+
+      border: 2px solid #25d366;
+
+      box-shadow:
+        0 5px 14px rgba(37, 211, 102, 0.25);
+    }
+
+    .hero-whatsapp:hover {
+      background: #1ebe5d;
+      border-color: #1ebe5d;
+
+      transform: translateY(-2px);
+    }
+
+
+    /* =====================================================
+       LOGO ACCUEIL
+    ===================================================== */
+
+    .hero-logo {
+      width: 35%;
+
+      display: flex;
+      justify-content: center;
+
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-logo img {
+      width: 200px;
+      height: 200px;
+
+      object-fit: contain;
+
+      background: white;
+
+      border-radius: 50%;
+
+      padding: 8px;
+
+      box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.35);
+    }
+
+
+    /* =====================================================
+       À PROPOS
+    ===================================================== */
+
+    .about {
+      background: white;
+
+      padding: 65px 7%;
+
+      text-align: center;
+    }
+
+    .section-subtitle {
+      color: #ffc400;
+
+      font-size: 14px;
+      font-weight: bold;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      color: #071b38;
+
+      font-size: 35px;
+
+      margin-bottom: 12px;
+    }
+
+    .yellow-line {
+      width: 65px;
+      height: 5px;
+
+      background: #ffc400;
+
+      margin: 0 auto 30px;
+    }
+
+    .about p.about-text {
+      max-width: 850px;
+
+      margin: auto;
+
+      color: #444;
+
+      font-size: 18px;
+
+      line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       POURQUOI NOUS CHOISIR
+       (aucun service / aucune réalisation)
+    ===================================================== */
+
+    .why-us {
+      background: #061b3a;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 70px 7%;
+    }
+
+    .why-us .section-title {
+      color: white;
+    }
+
+    .why-intro {
+      max-width: 700px;
+
+      margin: 0 auto 40px;
+
+      color: #dce3ed;
+
+      font-size: 17px;
+
+      line-height: 1.6;
+    }
+
+    .why-grid {
+      max-width: 1100px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+      gap: 22px;
+    }
+
+    .why-card {
+      background: white;
+
+      color: #071b38;
+
+      padding: 30px 22px;
+
+      border-radius: 15px;
+
+      box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15);
+
+      transition: 0.3s;
+    }
+
+    .why-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .why-icon {
+      width: 65px;
+      height: 65px;
+
+      margin: 0 auto 18px;
+
+      background: #ffc400;
+
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 30px;
+    }
+
+    .why-card h3 {
+      font-size: 19px;
+
+      margin-bottom: 12px;
+    }
+
+    .why-card p {
+      color: #555;
+
+      font-size: 15px;
+
+      line-height: 1.6;
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    .contact {
+      background: white;
+
+      padding: 70px 20px;
+
+      text-align: center;
+    }
+
+    .contact-description {
+      max-width: 750px;
+
+      margin: 0 auto 35px;
+
+      color: #555;
+
+      font-size: 17px;
+
+      line-height: 1.7;
+    }
+
+    .contact-actions {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      justify-content: center;
+
+      gap: 14px;
+
+      max-width: 900px;
+
+      margin: 0 auto 40px;
+    }
+
+    .contact-action {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      min-width: 220px;
+      min-height: 52px;
+
+      padding: 13px 22px;
+
+      border-radius: 30px;
+
+      text-decoration: none;
+
+      font-size: 15px;
+      font-weight: bold;
+
+      transition: 0.25s;
+    }
+
+    .contact-action.call {
+      background: #ffc400;
+      color: #071b38;
+    }
+
+    .contact-action.call:hover {
+      background: #ffd633;
+
+      transform: translateY(-3px);
+    }
+
+    .contact-action.whatsapp-btn {
+      background: #25d366;
+      color: white;
+    }
+
+    .contact-action.whatsapp-btn:hover {
+      background: #1ebe5d;
+
+      transform: translateY(-3px);
+    }
+
+    .contact-action.email {
+      background: #061b3a;
+      color: white;
+    }
+
+    .contact-action.email:hover {
+      background: #0b2d5c;
+
+      transform: translateY(-3px);
+    }
+
+
+    /* =====================================================
+       FORMULAIRE CLIENT
+    ===================================================== */
+
+    .contact-form {
+      max-width: 760px;
+
+      margin: 10px auto 0;
+
+      padding: 30px;
+
+      background: #ffffff;
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.12);
+
+      text-align: left;
+    }
+
+    .contact-form h3 {
+      color: #071b38;
+
+      text-align: center;
+
+      font-size: 24px;
+
+      margin-bottom: 8px;
+    }
+
+    .form-intro {
+      color: #666;
+
+      text-align: center;
+
+      font-size: 15px;
+
+      line-height: 1.6;
+
+      margin-bottom: 25px;
+    }
+
+    .form-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 7px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      color: #071b38;
+
+      font-size: 14px;
+
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+
+      padding: 14px 15px;
+
+      border: 1px solid #d7dce3;
+
+      border-radius: 10px;
+
+      background: #f8f9fb;
+
+      color: #071b38;
+
+      outline: none;
+
+      transition: 0.25s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #ffc400;
+
+      background: white;
+
+      box-shadow:
+        0 0 0 3px rgba(255, 196, 0, 0.15);
+    }
+
+    .form-group input {
+      height: 52px;
+    }
+
+    .form-group textarea {
+      min-height: 150px;
+
+      resize: vertical;
+    }
+
+    .contact-submit {
+      width: 100%;
+
+      margin-top: 18px;
+
+      padding: 15px;
+
+      border: none;
+
+      border-radius: 30px;
+
+      background: #ffc400;
+
+      color: #071b38;
+
+      font-weight: bold;
+
+      cursor: pointer;
+
+      transition: 0.25s;
+    }
+
+    .contact-submit:hover {
+      background: #ffd633;
+
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+
+    /* =====================================================
+       AVIS GOOGLE + QR CODE
+    ===================================================== */
+
+    .google-review {
+      max-width: 620px;
+
+      margin: 45px auto 0;
+
+      padding: 30px 22px;
+
+      text-align: center;
+
+      background: white;
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.10);
+    }
+
+    .google-review h3 {
+      color: #061b3a;
+
+      margin-bottom: 12px;
+
+      font-size: 24px;
+    }
+
+    .google-review p {
+      color: #555;
+
+      margin-bottom: 20px;
+    }
+
+    .qr-code-box {
+      width: min(100%, 300px);
+
+      margin: 20px auto;
+
+      padding: 10px;
+
+      background: white;
+
+      border: 3px solid #061b3a;
+
+      border-radius: 15px;
+    }
+
+    .qr-code-box img {
+      width: 100%;
+
+      height: auto;
+    }
+
+    .google-review-button {
+      display: inline-block;
+
+      padding: 13px 23px;
+
+      background: #061b3a;
+
+      color: white;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      border-radius: 30px;
+
+      transition: 0.25s;
+    }
+
+    .google-review-button:hover {
+      background: #ffc400;
+
+      color: #071b38;
+    }
+
+
+    /* =====================================================
+       WHATSAPP FLOTTANT
+    ===================================================== */
+
+    .whatsapp {
+      position: fixed;
+
+      right: 20px;
+      bottom: 20px;
+
+      width: 62px;
+      height: 62px;
+
+      border-radius: 50%;
+
+      background: #25d366;
+
+      color: white;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      text-decoration: none;
+
+      font-size: 29px;
+
+      box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.25);
+
+      z-index: 9998;
+
+      transition: 0.25s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    footer {
+      background: #061b3a;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 35px 20px 25px;
+
+      border-top: 3px solid #ffc400;
+    }
+
+    footer img {
+      width: 80px;
+      height: 80px;
+
+      object-fit: contain;
+
+      margin: 0 auto 13px;
+
+      border-radius: 50%;
+    }
+
+    footer p {
+      max-width: 800px;
+
+      margin: 0 auto;
+
+      color: #e6ebf2;
+
+      font-size: 14px;
+    }
+
+    .footer-links {
+      margin-top: 15px;
+    }
+
+    .footer-links a {
+      color: white;
+
+      text-decoration: none;
+
+      margin: 0 8px;
+
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: #ffc400;
+    }
+
+
+    /* =====================================================
+       TABLETTE
+    ===================================================== */
+
+    @media (max-width: 900px) {
+
+      .why-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+    }
+
+
+    /* =====================================================
+       MOBILE
+    ===================================================== */
+
+    @media (max-width: 768px) {
+
+      .navbar {
+        min-height: 70px;
+
+        padding: 0 18px;
+      }
+
+      .brand img {
+        width: 52px;
+        height: 52px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: #061b3a;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 8px 0;
+
+        box-shadow:
+          0 8px 18px rgba(0, 0, 0, 0.20);
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+
+        width: 100%;
+
+        padding: 16px 24px;
+
+        border-bottom:
+          1px solid rgba(255, 255, 255, 0.12);
+      }
+
+
+      /* ACCUEIL MOBILE */
+
+      .hero {
+        min-height: auto;
+
+        padding: 55px 22px 60px;
+
+        flex-direction: column;
+
+        text-align: center;
+      }
+
+      .hero::after {
+        display: none;
+      }
+
+      .hero-content,
+      .hero-logo {
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 52px;
+      }
+
+      .hero-text {
+        font-size: 18px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .call-button,
+      .hero-whatsapp {
+        width: 100%;
+      }
+
+      .hero-logo {
+        margin-top: 35px;
+      }
+
+      .hero-logo img {
+        width: 155px;
+        height: 155px;
+
+        margin: auto;
+      }
+
+
+      /* À PROPOS */
+
+      .about {
+        padding: 55px 18px;
+      }
+
+      .section-title {
+        font-size: 30px;
+      }
+
+      .about p.about-text {
+        font-size: 16px;
+      }
+
+
+      /* POURQUOI NOUS */
+
+      .why-us {
+        padding: 55px 20px;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+      }
+
+
+      /* CONTACT */
+
+      .contact {
+        padding: 55px 16px;
+      }
+
+      .contact-actions {
+        flex-direction: column;
+      }
+
+      .contact-action {
+        width: 100%;
+
+        min-width: 0;
+      }
+
+      .contact-form {
+        padding: 22px 18px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+
+      /* GOOGLE */
+
+      .google-review {
+        margin-top: 40px;
+
+        padding: 28px 15px;
+      }
+
+      .qr-code-box {
+        width: min(100%, 300px);
+      }
+
+
+      /* WHATSAPP */
+
+      .whatsapp {
+        width: 58px;
+        height: 58px;
+
+        right: 16px;
+        bottom: 16px;
+      }
+
+
+      /* FOOTER */
+
+      footer {
+        padding: 30px 15px 22px;
+      }
+
+      footer img {
+        width: 80px;
+        height: 80px;
+      }
+
+      footer p {
+        font-size: 13px;
+      }
+
+    }
+  </style>
 </head>
+
 
 <body>
 
+  <!-- ===================================================
+       MENU
+  ==================================================== -->
 
-<!-- =====================================================
-     NAVIGATION
-===================================================== -->
+  <header class="navbar">
 
-<header class="navbar">
-
-    <a href="index.html" class="brand" aria-label="Nexa AfriTech - Accueil">
-
-        <img
-            src="logo.png"
-            alt="Logo Nexa AfriTech"
-        >
-
+    <a
+      class="brand"
+      href="#accueil"
+      aria-label="Nexa AfriTech - Accueil"
+    >
+      <img
+        src="logo.webp"
+        alt="Logo Nexa AfriTech"
+      >
     </a>
 
 
+    <!-- MENU MOBILE -->
+
     <button
-        id="menuToggle"
-        class="menu-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="navLinks"
-        aria-label="Ouvrir le menu"
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+      aria-controls="navLinks"
     >
-        ☰
+      ☰
     </button>
 
 
+    <!-- NAVIGATION -->
+
     <nav
-        id="navLinks"
-        class="nav-links"
-        aria-label="Navigation principale"
+      class="nav-links"
+      id="navLinks"
+      aria-label="Navigation principale"
     >
 
-        <a href="index.html" class="active">
-            Accueil
-        </a>
+      <a
+        href="index.html"
+        class="active"
+      >
+        Accueil
+      </a>
 
-        <a href="#about">
-            À propos
-        </a>
+      <a href="#apropos">
+        À propos
+      </a>
 
-        <a href="#services">
-            Services
-        </a>
+      <!-- Pages séparées : pas de services dans l'accueil -->
 
-        <a href="#realisations">
-            Réalisations
-        </a>
+      <a href="services.html">
+        Services
+      </a>
 
-        <a href="#contact">
-            Contact
-        </a>
+      <a href="realisations.html">
+        Réalisations
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
 
     </nav>
 
-</header>
+  </header>
 
 
+  <main>
 
-<!-- =====================================================
-     HERO / ACCUEIL
-===================================================== -->
 
-<main>
+    <!-- =================================================
+         ACCUEIL
+    ================================================== -->
 
-<section class="hero" id="accueil">
+    <section
+      class="hero"
+      id="accueil"
+    >
 
-    <div class="hero-content">
+      <div class="hero-content">
 
         <p class="hero-small">
-            NEXA AFRITECH
+          NEXA AFRITECH
         </p>
 
 
+        <!-- UN SEUL BIENVENUE -->
+
         <h1>
-            Bienvenue chez
-            <span>Nexa AfriTech</span>
+          Bienvenue chez
+          <span>Nexa AfriTech</span>
         </h1>
 
 
         <p class="hero-text">
-            Des solutions professionnelles en électricité bâtiment,
-            froid industriel et climatisation.
+          Des solutions professionnelles, fiables et performantes
+          pour vos projets techniques.
         </p>
 
 
-        <a
-            href="tel:+2290195411231"
+        <!-- BOUTONS -->
+
+        <div class="hero-buttons">
+
+          <a
             class="call-button"
-        >
+            href="tel:+2290162331017"
+          >
             📞 Appelez-nous
-        </a>
+          </a>
 
 
-        <a
-            href="https://wa.me/22995411231"
+          <a
             class="hero-whatsapp"
+            href="https://wa.me/2290162331017?text=Bonjour%20Nexa%20AfriTech%2C%20je%20souhaite%20avoir%20des%20informations."
             target="_blank"
             rel="noopener"
-        >
+          >
             💬 WhatsApp
-        </a>
-
-    </div>
-
-
-    <div class="hero-logo">
-
-        <img
-            src="logo.png"
-            alt="Nexa AfriTech"
-        >
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     À PROPOS
-===================================================== -->
-
-<section
-    class="about"
-    id="about"
->
-
-    <h2>
-        À propos de Nexa AfriTech
-    </h2>
-
-    <div class="yellow-line"></div>
-
-    <p>
-        Nexa AfriTech accompagne les particuliers, entreprises
-        et professionnels avec des solutions techniques adaptées
-        aux exigences des installations modernes.
-        Notre priorité est de proposer un travail sérieux,
-        professionnel et durable.
-    </p>
-
-</section>
-
-
-
-<!-- =====================================================
-     SERVICES
-===================================================== -->
-
-<section
-    class="services"
-    id="services"
->
-
-    <h2>
-        Nos services
-    </h2>
-
-    <div class="yellow-line"></div>
-
-
-    <div class="services-grid">
-
-
-        <!-- SERVICE 1 -->
-
-        <article class="service-card">
-
-            <div class="service-icon">
-                ⚡
-            </div>
-
-            <h3>
-                Électricité Bâtiment
-            </h3>
-
-            <div class="small-line"></div>
-
-            <p>
-                Installation, maintenance, dépannage et rénovation
-                des installations électriques pour bâtiments
-                résidentiels, commerciaux et professionnels.
-            </p>
-
-        </article>
-
-
-
-        <!-- SERVICE 2 -->
-
-        <article class="service-card">
-
-            <div class="service-icon">
-                ❄️
-            </div>
-
-            <h3>
-                Froid industriel
-            </h3>
-
-            <div class="small-line"></div>
-
-            <p>
-                Solutions de froid industriel, installation,
-                entretien et maintenance des équipements
-                frigorifiques et systèmes de refroidissement.
-            </p>
-
-        </article>
-
-
-
-        <!-- SERVICE 3 -->
-
-        <article class="service-card">
-
-            <div class="service-icon">
-                🌬️
-            </div>
-
-            <h3>
-                Climatisation
-            </h3>
-
-            <div class="small-line"></div>
-
-            <p>
-                Installation, entretien et dépannage de systèmes
-                de climatisation pour les espaces résidentiels,
-                commerciaux et professionnels.
-            </p>
-
-        </article>
-
-
-
-        <!-- SERVICE 4 -->
-
-        <article class="service-card">
-
-            <div class="service-icon">
-                🔧
-            </div>
-
-            <h3>
-                Maintenance & dépannage
-            </h3>
-
-            <div class="small-line"></div>
-
-            <p>
-                Intervention technique, diagnostic, maintenance
-                préventive et corrective afin de garantir
-                la fiabilité et la performance de vos équipements.
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     POURQUOI NOUS CHOISIR
-===================================================== -->
-
-<section class="why-us">
-
-    <p class="section-subtitle">
-        NOS PRIORITÉS
-    </p>
-
-    <h2>
-        Pourquoi nous choisir ?
-    </h2>
-
-    <p class="why-intro">
-        Une approche professionnelle basée sur la qualité
-        du travail, la fiabilité des installations et
-        la satisfaction de nos clients.
-    </p>
-
-
-    <div class="why-grid">
-
-
-        <article class="why-card">
-
-            <div class="why-icon">
-                ✓
-            </div>
-
-            <h3>
-                Qualité
-            </h3>
-
-            <p>
-                Nous accordons une attention particulière
-                à la qualité de chaque intervention.
-            </p>
-
-        </article>
-
-
-
-        <article class="why-card">
-
-            <div class="why-icon">
-                ⚙
-            </div>
-
-            <h3>
-                Performance
-            </h3>
-
-            <p>
-                Des solutions pensées pour offrir
-                efficacité et performance.
-            </p>
-
-        </article>
-
-
-
-        <article class="why-card">
-
-            <div class="why-icon">
-                🛡
-            </div>
-
-            <h3>
-                Fiabilité
-            </h3>
-
-            <p>
-                Des installations réalisées avec sérieux
-                pour une utilisation durable.
-            </p>
-
-        </article>
-
-
-
-        <article class="why-card">
-
-            <div class="why-icon">
-                ★
-            </div>
-
-            <h3>
-                Assurance
-            </h3>
-
-            <p>
-                Un accompagnement professionnel avant,
-                pendant et après nos interventions.
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     RÉALISATIONS
-===================================================== -->
-
-<section
-    class="realisations-page"
-    id="realisations"
->
-
-    <div class="realisations-header">
-
-        <p class="section-subtitle">
-            NOS RÉALISATIONS
-        </p>
-
-        <h1>
-            Des projets réalisés avec professionnalisme
-        </h1>
-
-        <p>
-            Découvrez quelques domaines d'intervention
-            de Nexa AfriTech et notre savoir-faire technique.
-        </p>
-
-    </div>
-
-
-    <div class="projets-grid">
-
-
-        <!-- PROJET ÉLECTRICITÉ -->
-
-        <article class="projet-card">
-
-            <div class="projet-image">
-
-                <img
-                    src="electricite.webp"
-                    alt="Réalisation en électricité bâtiment"
-                    loading="lazy"
-                    onclick="ouvrirProjet('electricite')"
-                >
-
-            </div>
-
-
-            <div class="projet-content">
-
-                <h2>
-                    Électricité Bâtiment
-                </h2>
-
-                <p>
-                    Installation et organisation des équipements
-                    électriques pour des infrastructures modernes.
-                </p>
-
-                <button
-                    type="button"
-                    class="voir-projet"
-                    onclick="ouvrirProjet('electricite')"
-                >
-                    Voir le projet
-                </button>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- PROJET FROID -->
-
-        <article class="projet-card">
-
-            <div class="projet-image">
-
-                <img
-                    src="froid.webp"
-                    alt="Réalisation en froid industriel"
-                    loading="lazy"
-                    onclick="ouvrirProjet('froid')"
-                >
-
-            </div>
-
-
-            <div class="projet-content">
-
-                <h2>
-                    Froid industriel
-                </h2>
-
-                <p>
-                    Installation et maintenance de solutions
-                    de refroidissement adaptées aux besoins professionnels.
-                </p>
-
-                <button
-                    type="button"
-                    class="voir-projet"
-                    onclick="ouvrirProjet('froid')"
-                >
-                    Voir le projet
-                </button>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- PROJET CLIMATISATION -->
-
-        <article class="projet-card">
-
-            <div class="projet-image">
-
-                <img
-                    src="climatisation.webp"
-                    alt="Réalisation en climatisation"
-                    loading="lazy"
-                    onclick="ouvrirProjet('climatisation')"
-                >
-
-            </div>
-
-
-            <div class="projet-content">
-
-                <h2>
-                    Climatisation
-                </h2>
-
-                <p>
-                    Solutions de climatisation pour améliorer
-                    le confort et les conditions d'utilisation des espaces.
-                </p>
-
-                <button
-                    type="button"
-                    class="voir-projet"
-                    onclick="ouvrirProjet('climatisation')"
-                >
-                    Voir le projet
-                </button>
-
-            </div>
-
-        </article>
-
-    </div>
-
-
-    <!-- =================================================
-         ENVOI DE PHOTOS WHATSAPP
-    ================================================= -->
-
-    <div class="photos-projet">
-
-        <h3 class="photos-projet-title">
-            Vous souhaitez nous présenter votre installation ?
-        </h3>
-
-        <p class="photos-projet-text">
-            Envoyez-nous simplement des photos de votre
-            installation directement sur WhatsApp afin
-            de nous permettre de mieux comprendre votre besoin.
-        </p>
-
-        <a
-            href="https://wa.me/22995411231?text=Bonjour%20Nexa%20AfriTech%2C%20je%20souhaite%20vous%20envoyer%20des%20photos%20de%20mon%20installation."
-            class="photos-whatsapp"
-            target="_blank"
-            rel="noopener"
-        >
-            💬 Envoyer mes photos sur WhatsApp
-        </a>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACT
-===================================================== -->
-
-<section
-    class="contact"
-    id="contact"
->
-
-    <h2>
-        Contactez-nous
-    </h2>
-
-    <div class="yellow-line"></div>
-
-    <p>
-        Une question, un projet ou besoin d'une intervention ?
-        Contactez Nexa AfriTech.
-    </p>
-
-
-    <div class="contact-info">
-
-        <p class="contact-phone">
-            📞 +229 01 95 41 12 31
-        </p>
-
-        <p class="contact-phone">
-            📞 +229 01 62 33 10 17
-        </p>
-
-
-        <a
-            href="mailto:contact@nexa-afritech.com"
-        >
-            ✉ contact@nexa-afritech.com
-        </a>
-
-        <br>
-
-        <a
-            href="https://wa.me/22995411231"
-            target="_blank"
-            rel="noopener"
-        >
-            💬 Nous contacter sur WhatsApp
-        </a>
-
-    </div>
-
-
-
-    <!-- FORMULAIRE -->
-
-    <form
-        class="contact-form"
-        action="https://formsubmit.co/contact@nexa-afritech.com"
-        method="POST"
-    >
-
-        <input
-            type="hidden"
-            name="_subject"
-            value="Nouveau message depuis le site Nexa AfriTech"
-        >
-
-        <input
-            type="hidden"
-            name="_captcha"
-            value="false"
-        >
-
-        <input
-            type="hidden"
-            name="_template"
-            value="table"
-        >
-
-
-        <label
-            class="form-label"
-            for="nom"
-        >
-            Nom complet
-        </label>
-
-        <input
-            id="nom"
-            type="text"
-            name="nom"
-            placeholder="Votre nom complet"
-            autocomplete="name"
-            required
-        >
-
-
-        <label
-            class="form-label"
-            for="email"
-        >
-            Adresse e-mail
-        </label>
-
-        <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Votre adresse e-mail"
-            autocomplete="email"
-            required
-        >
-
-
-        <label
-            class="form-label"
-            for="telephone"
-        >
-            Téléphone
-        </label>
-
-        <input
-            id="telephone"
-            type="tel"
-            name="telephone"
-            placeholder="Votre numéro de téléphone"
-            autocomplete="tel"
-        >
-
-
-        <label
-            class="form-label"
-            for="service"
-        >
-            Service souhaité
-        </label>
-
-        <select
-            id="service"
-            name="service"
-            required
-        >
-
-            <option value="">
-                Sélectionnez un service
-            </option>
-
-            <option value="Électricité bâtiment">
-                Électricité bâtiment
-            </option>
-
-            <option value="Froid industriel">
-                Froid industriel
-            </option>
-
-            <option value="Climatisation">
-                Climatisation
-            </option>
-
-            <option value="Maintenance et dépannage">
-                Maintenance et dépannage
-            </option>
-
-            <option value="Autre">
-                Autre
-            </option>
-
-        </select>
-
-
-        <label
-            class="form-label"
-            for="message"
-        >
-            Votre message
-        </label>
-
-        <textarea
-            id="message"
-            name="message"
-            placeholder="Décrivez votre besoin..."
-            required
-        ></textarea>
-
-
-        <button
-            type="submit"
-        >
-            Envoyer le message
-        </button>
-
-    </form>
-
-
-
-    <!-- PHOTOS WHATSAPP -->
-
-    <div class="photo-whatsapp">
-
-        <h3>
-            Besoin de nous montrer votre installation ?
-        </h3>
-
-        <p>
-            Vous pouvez nous envoyer vos photos directement
-            sur WhatsApp pour faciliter l'analyse de votre besoin.
-        </p>
-
-        <a
-            href="https://wa.me/22995411231"
-            class="photo-whatsapp-button"
-            target="_blank"
-            rel="noopener"
-        >
-            💬 Envoyer des photos sur WhatsApp
-        </a>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     AVIS GOOGLE + QR CODE
-===================================================== -->
-
-<section class="google-reviews">
-
-    <p class="section-subtitle">
-        VOTRE AVIS COMPTE
-    </p>
-
-    <h2>
-        Laissez-nous votre avis Google
-    </h2>
-
-    <p class="google-reviews-text">
-        Votre expérience nous aide à améliorer continuellement
-        la qualité de nos services et à mieux accompagner
-        nos futurs clients.
-    </p>
-
-
-    <div class="google-review">
-
-        <h3>
-            Merci pour votre confiance
-        </h3>
-
-        <p>
-            Scannez le QR code ci-dessous pour accéder
-            à notre espace d'avis Google.
-        </p>
-
-
-        <div class="qr-code-box">
-
-            <img
-                src="qr-code.png"
-                alt="QR code pour laisser un avis Google"
-                loading="lazy"
-            >
+          </a>
 
         </div>
 
-
-        <!-- Remplace cette adresse uniquement si ton lien
-             Google Avis définitif est différent -->
-
-        <a
-            href="#"
-            class="google-review-button"
-            target="_blank"
-            rel="noopener"
-        >
-            ⭐ Laisser un avis Google
-        </a>
-
-    </div>
-
-</section>
+      </div>
 
 
+      <!-- LOGO -->
 
-<!-- =====================================================
-     POPUP RÉALISATIONS
-===================================================== -->
-
-<div
-    id="popup-projet"
-    class="popup-projet"
-    hidden
-    role="dialog"
-    aria-modal="true"
-    aria-label="Aperçu du projet"
->
-
-    <div class="popup-contenu">
-
-        <button
-            type="button"
-            class="popup-retour"
-            onclick="fermerProjet()"
-            aria-label="Fermer"
-        >
-            ✕ Fermer
-        </button>
-
+      <div class="hero-logo">
 
         <img
-            id="image-projet"
-            src=""
-            alt="Aperçu de la réalisation"
+          src="logo.webp"
+          alt="Logo Nexa AfriTech"
         >
 
-    </div>
+      </div>
 
-</div>
-
-
-
-</main>
+    </section>
 
 
 
-<!-- =====================================================
-     WHATSAPP FLOTTANT
-===================================================== -->
+    <!-- =================================================
+         À PROPOS
+    ================================================== -->
 
-<a
-    href="https://wa.me/22995411231"
-    class="whatsapp"
-    target="_blank"
-    rel="noopener"
-    aria-label="Contacter Nexa AfriTech sur WhatsApp"
-    title="WhatsApp Nexa AfriTech"
->
-    💬
-</a>
-
-
-
-<!-- =====================================================
-     PIED DE PAGE
-===================================================== -->
-
-<footer>
-
-    <img
-        src="logo.png"
-        alt="Logo Nexa AfriTech"
+    <section
+      class="about"
+      id="apropos"
     >
 
+      <p class="section-subtitle">
+        NEXA AFRITECH
+      </p>
 
-    <p>
-        <strong>Nexa AfriTech</strong>
-    </p>
+      <h2 class="section-title">
+        À propos de nous
+      </h2>
 
-
-    <p>
-        L'excellence en Électricité Bâtiment –
-        Froid industriel – Climatisation
-    </p>
-
-
-    <p>
-        📞 +229 01 95 41 12 31
-        ·
-        💬 +229 95 41 12 31
-    </p>
+      <div class="yellow-line"></div>
 
 
-    <p>
-        ✉ contact@nexa-afritech.com
-    </p>
+      <p class="about-text">
 
+        Nexa AfriTech accompagne ses clients avec des solutions
+        professionnelles, fiables et adaptées aux exigences
+        des installations modernes.
 
-    <p>
-        📍 Cotonou, Bénin
-    </p>
+        <br><br>
 
-
-    <p>
-        © 2026 Nexa AfriTech.
-        Tous droits réservés.
-    </p>
-
-</footer>
-
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script src="script.js"></script>
-
-</body>
-    </html>
+        Notre engagement repose sur la qualité du travail,
+        la performance des solutions et la satisfact
