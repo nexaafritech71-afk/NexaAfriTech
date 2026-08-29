@@ -3281,3 +3281,50 @@ footer p {
     }
 
         }
+    /* =========================================
+   LIENS RÉSEAUX SOCIAUX DANS LE FOOTER
+========================================= */
+
+.footer-separator {
+    width: 80%;
+    max-width: 450px;
+    margin: 25px auto 20px;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.footer-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.footer-social-links a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.25s ease;
+}
+
+.footer-social-links a:hover {
+    opacity: 0.75;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .footer-social-links {
+        gap: 14px;
+    }
+
+    .footer-social-links a {
+        font-size: 14px;
+    }
+
+}
