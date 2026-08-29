@@ -3126,3 +3126,158 @@ footer p {
     }
 
         }
+    /* =========================================
+   PAGE POLITIQUE DE CONFIDENTIALITÉ
+========================================= */
+
+/* =========================
+   EN-TÊTE
+========================= */
+
+.confidentialite-header {
+    background: #061b3a;
+    color: #ffffff;
+    text-align: center;
+    padding: 70px 20px 60px;
+}
+
+.confidentialite-header h1 {
+    max-width: 900px;
+    margin: 0 auto 15px;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.2;
+}
+
+.confidentialite-header > p:last-child {
+    max-width: 780px;
+    margin: 0 auto;
+    color: #dce3ed;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTENU
+========================= */
+
+.confidentialite-content {
+    padding: 75px 7%;
+    background: #f5f7fa;
+}
+
+.confidentialite-container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.confidentialite-block {
+    margin-bottom: 22px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 14px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.confidentialite-block h2 {
+    margin: 0 0 16px;
+    color: #071b38;
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+.confidentialite-block p {
+    margin: 0 0 14px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.confidentialite-block p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   BLOC CONTACT
+========================= */
+
+.confidentialite-contact {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 4px solid #ffc400;
+}
+
+.confidentialite-contact h2 {
+    font-size: 28px;
+}
+
+.confidentialite-contact p {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.confidentialite-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 14px 28px;
+
+    background: #ffc400;
+    color: #071b38;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.confidentialite-button:hover {
+    background: #ffd633;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .confidentialite-header {
+        padding: 55px 20px 45px;
+    }
+
+    .confidentialite-header h1 {
+        font-size: 34px;
+    }
+
+    .confidentialite-header > p:last-child {
+        font-size: 16px;
+    }
+
+    .confidentialite-content {
+        padding: 50px 20px;
+    }
+
+    .confidentialite-block {
+        padding: 24px 20px;
+        margin-bottom: 18px;
+    }
+
+    .confidentialite-block h2 {
+        font-size: 21px;
+    }
+
+    .confidentialite-block p {
+        font-size: 15.5px;
+        line-height: 1.75;
+    }
+
+        }
