@@ -3336,22 +3336,26 @@ footer .footer-social-links a:hover {
     }
 
 }
-    /* LOGO DISCRET EN ARRIÈRE-PLAN DE L'ACCUEIL */
+    /* ÉNORME LOGO DISCRET EN ARRIÈRE-PLAN DE L'ACCUEIL */
 
 .hero-logo {
     position: absolute !important;
-    left: 30% !important;
+    left: 50% !important;
     top: 50% !important;
     transform: translate(-50%, -50%) !important;
-    z-index: 1 !important;
-    opacity: 0.10 !important;
+
+    width: 900px !important;
+    height: 900px !important;
+
+    opacity: 0.09 !important;
     pointer-events: none !important;
+    z-index: 1 !important;
 }
 
 .hero-logo img {
-    width: 750px !important;
-    height: 750px !important;
-    
+    width: 100% !important;
+    height: 100% !important;
+
     object-fit: contain !important;
     background: transparent !important;
     border-radius: 0 !important;
@@ -3359,17 +3363,19 @@ footer .footer-social-links a:hover {
     box-shadow: none !important;
 }
 
+
+/* VERSION TÉLÉPHONE */
+
 @media (max-width: 768px) {
 
     .hero-logo {
         left: 50% !important;
-        opacity: 0.12 !important;
-    }
+        top: 50% !important;
 
-    .hero-logo img {
-        width: 680px !important;
-       height: 680px !important;
-        
+        width: 700px !important;
+        height: 700px !important;
+
+        opacity: 0.08 !important;
     }
 
 }
