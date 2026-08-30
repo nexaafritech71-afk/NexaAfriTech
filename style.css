@@ -3349,8 +3349,9 @@ footer .footer-social-links a:hover {
 }
 
 .hero-logo img {
-    width: 380px !important;
-    height: 380px !important;
+    width: 650px !important;
+    height: 650px !important;
+    
     object-fit: contain !important;
     background: transparent !important;
     border-radius: 0 !important;
@@ -3366,8 +3367,9 @@ footer .footer-social-links a:hover {
     }
 
     .hero-logo img {
-        width: 300px !important;
-        height: 300px !important;
+        width: 480px !important;
+       height: 480px !important;
+        
     }
 
 }
