@@ -39,24 +39,32 @@ popup.style.display = "flex";
 
 }
 
-function fermerProjet() {
-const popup = document.getElementById("popup-projet");
-popup.style.display = "none";
-popup.hidden = true;
-}
+ function ouvrirProjet(projet) {
 
-// Accessibilité : fermeture de la fenêtre projet avec Échap et clic sur l'arrière-plan.
-document.addEventListener("keydown", function (event) {
-if (event.key === "Escape") {
-fermerProjet();
-}
-});
+    const popup = document.getElementById("popup-projet");
+    const image = document.getElementById("image-projet");
 
-const popupProjet = document.getElementById("popup-projet");
-if (popupProjet) {
-popupProjet.addEventListener("click", function (event) {
-if (event.target === popupProjet) {
-fermerProjet();
-}
-});
-}
+    if (projet === "electricite") {
+        image.src = "electricite.webp";
+    }
+
+    if (projet === "froid") {
+        image.src = "froid.webp";
+    }
+
+    if (projet === "climatisation") {
+        image.src = "climatisation.webp";
+    }
+
+    if (projet === "cuisine-gaz") {
+        image.src = "cuisine-gaz.webp";
+    }
+
+    if (projet === "entretien-cuisiniere-gaz") {
+        image.src = "entretien-cuisiniere-gaz.webp";
+    }
+
+    popup.hidden = false;
+    popup.style.display = "flex";
+
+ }
