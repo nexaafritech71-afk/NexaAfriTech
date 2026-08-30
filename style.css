@@ -3373,4 +3373,45 @@ footer .footer-social-links a:hover {
     }
 
 }
-    
+
+    /* LOGO DISCRET EN ARRIÈRE-PLAN — SECTION BIENVENUE */
+
+.why-us {
+    position: relative;
+    overflow: hidden;
+}
+
+.why-us::before {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    background-image: url("logo.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.07;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.why-us > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* VERSION TÉLÉPHONE */
+
+@media (max-width: 768px) {
+
+    .why-us::before {
+        width: 520px;
+        height: 520px;
+        opacity: 0.06;
+    }
+
+}
