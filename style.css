@@ -3349,8 +3349,8 @@ footer .footer-social-links a:hover {
 }
 
 .hero-logo img {
-    width: 650px !important;
-    height: 650px !important;
+    width: 750px !important;
+    height: 750px !important;
     
     object-fit: contain !important;
     background: transparent !important;
@@ -3363,12 +3363,12 @@ footer .footer-social-links a:hover {
 
     .hero-logo {
         left: 50% !important;
-        opacity: 0.08 !important;
+        opacity: 0.10 !important;
     }
 
     .hero-logo img {
-        width: 480px !important;
-       height: 480px !important;
+        width: 680px !important;
+       height: 680px !important;
         
     }
 
