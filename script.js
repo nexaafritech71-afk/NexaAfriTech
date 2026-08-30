@@ -38,8 +38,7 @@ popup.hidden = false;
 popup.style.display = "flex";
 
 }
-
- function ouvrirProjet(projet) {
+function ouvrirProjet(projet) {
 
     const popup = document.getElementById("popup-projet");
     const image = document.getElementById("image-projet");
@@ -56,6 +55,18 @@ popup.style.display = "flex";
         image.src = "climatisation.webp";
     }
 
+    if (projet === "electricite2") {
+        image.src = "electricite2.webp";
+    }
+
+    if (projet === "froid2") {
+        image.src = "Froid2.webp";
+    }
+
+    if (projet === "climatisation2") {
+        image.src = "climatisation2.webp";
+    }
+
     if (projet === "cuisine-gaz") {
         image.src = "cuisine-gaz.webp";
     }
@@ -67,4 +78,43 @@ popup.style.display = "flex";
     popup.hidden = false;
     popup.style.display = "flex";
 
- }
+}
+
+
+function fermerProjet() {
+
+    const popup = document.getElementById("popup-projet");
+
+    popup.style.display = "none";
+    popup.hidden = true;
+
+}
+
+
+/* Fermeture avec la touche Échap */
+
+document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+        fermerProjet();
+    }
+
+});
+
+
+/* Fermeture en cliquant sur l'arrière-plan */
+
+const popupProjet = document.getElementById("popup-projet");
+
+if (popupProjet) {
+
+    popupProjet.addEventListener("click", function (event) {
+
+        if (event.target === popupProjet) {
+            fermerProjet();
+        }
+
+    });
+
+}
+  
