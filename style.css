@@ -3415,3 +3415,44 @@ footer .footer-social-links a:hover {
     }
 
 }
+    /* FORCE LE LOGO EN ARRIÈRE-PLAN — SECTION BIENVENUE */
+
+.why-us {
+    position: relative !important;
+    overflow: hidden !important;
+    isolation: isolate !important;
+}
+
+.why-us::before {
+    content: "" !important;
+    position: absolute !important;
+    width: 700px !important;
+    height: 700px !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+
+    background-image: url("logo.webp") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+
+    opacity: 0.12 !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+}
+
+.why-us > * {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+@media (max-width: 768px) {
+
+    .why-us::before {
+        width: 650px !important;
+        height: 650px !important;
+        opacity: 0.10 !important;
+    }
+
+}
