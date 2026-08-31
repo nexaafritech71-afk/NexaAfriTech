@@ -79,6 +79,10 @@ function ouvrirProjet(projet) {
     image.src = "courant-fort.webp";
 }
 
+ if (projet === "courant-fort-2") {
+    image.src = "courant-fort-2.webp";
+ }
+
 if (projet === "courant-faible") {
     image.src = "courant-faible.webp";
 }
