@@ -75,6 +75,14 @@ function ouvrirProjet(projet) {
         image.src = "entretien-cuisiniere-gaz.webp";
     }
 
+ if (projet === "courant-fort") {
+    image.src = "courant-fort.webp";
+}
+
+if (projet === "courant-faible") {
+    image.src = "courant-faible.webp";
+}
+
     popup.hidden = false;
     popup.style.display = "flex";
 
