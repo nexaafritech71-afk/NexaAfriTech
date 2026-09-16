@@ -3462,3 +3462,18 @@ footer .footer-social-links a:hover {
     }
 
 }
+    /* Liens courant fort et courant faible */
+.service-link {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #ffc400;
+    color: #061b3a;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.service-link:hover {
+    transform: translateY(-2px);
+}
